@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>顶部导航</title>
+  <meta name="viewport" content="width=device-width,initial-scale=0.5,maxinum-scale=0.5,user-scalable=0">
+  <link href="../../css/reset.css" rel="stylesheet" />
+  <link href="../../css/com.css" rel="stylesheet" />
+  <style>
+    .header {
+      display: flex;
+      display: -webkit-flex;
+      width: 100%;
+      height: 1.2rem;
+      background-color: #FFF;
+      text-align: center;
+    }
+    .header .link-return {
+      width: 1.24rem;
+      border-right: 2px solid #e0f0ff;
+    }
+    .header .link-return i {
+      display: block;
+      width: 0.49rem;
+      height: 0.32rem;
+      margin: 0.3rem 0.36rem 0.17rem;
+      background: url('../../img/icon/icon-back-index.png') no-repeat center bottom;
+      background-size: ;
+    }
+    .header .link-my-message {
+      width: 1.2rem;
+      border-left: 2px solid #e0f0ff;
+      border-right: 2px solid #e0f0ff;
+    }
+    .header .link-my-message i {
+      display: block;
+      width: 100%;
+      height: 0.68rem;
+      margin-bottom: 0.1rem;
+    }
+    .header .btn-open-side-nav {
+      width: 0.7rem;
+    }
+    .header a {
+      color: #1277be;
+    }
+    .header .nav {
+      display: flex;
+      display: -webkit-flex;
+      flex: 1;
+      -webkit-flex: 1;
+    }
+    .header .nav li {
+      flex: 1;
+      -webkit-flex: 1;
+    }
+    .header .nav a {
+      font-size: 16px;
+    }
+    .header .nav i {
+      display: block;
+      width: 0.33rem;
+      height: 0.35rem;
+      margin: 0.15rem auto 0.1rem;
+    }
+    .header .nav i {
+
+    }
+    .header .nav span {
+      display: block;
+      font-size: 24px;
+      color: #ffc14a;
+    }
+  </style>
+</head>
+<body>
+  <!-- /header -->
+  <header id="header" class="header">
+    <a href="#" class="link-return"><i></i>返回首页</a>
+    <ul class="nav">
+      <li><a href="#"><i class="iconfont icon-huiyijiyao"></i>计划场次</a><span>12</span></li>
+      <li><a href="#"><i class="iconfont icon-gongwenbao"></i>已开会议</a><span>34</span></li>
+      <li><a href="#"><i class="fa fa-stethoscope"></i>覆盖医生</a><span>20</span></li>
+      <li><a href="#"><i class="fa fa-vcard-o"></i>覆盖代表</a><span>20</span></li>
+    </ul>
+    <a href="#" class="link-my-message"><i></i>我的消息</a>
+    <div class="btn-open-side-nav"></div>
+  </header>
+</body>
+</html>
