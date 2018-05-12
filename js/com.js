@@ -1,7 +1,7 @@
 var LayerManager = function () {
-  var layers = {}
+  var layers = {};
 
-  var add = function (name, container, cover) {
+  var add = function (name, container, cover, wrap) {
     // container 弹出层内容 cover 弹出的遮罩层 都直接传class的名称不要带.
     var oJqDomCover = $('.' + cover)
     if (!oJqDomCover.length) {
@@ -15,17 +15,26 @@ var LayerManager = function () {
       container: $('.' + container),
       cover: oJqDomCover,
     }
-    console.log(layers)
+    wrap && (layers[name].wrap = $('.' + wrap))
   }
 
   var show = function (name) {
     layers[name].container.fadeIn()
     layers[name].cover.fadeIn()
+    if (layers[name].wrap) {
+      var nCurScrollTop = document.documentElement.scrollTop
+      layers[name].wrap.addClass('temp-wrap').scrollTop(nCurScrollTop)
+    }
   }
 
   var hide = function (name) {
     layers[name].container.fadeOut()
     layers[name].cover.fadeOut()
+    if (layers[name].wrap) {
+      var nCurScrollTop = layers[name].wrap.scrollTop()
+      layers[name].wrap.removeClass('temp-wrap')
+      document.documentElement.scrollTop = nCurScrollTop
+    }
   }
 
   return {
