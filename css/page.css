@@ -1,0 +1,34 @@
+/********* login *********/
+.login {
+  padding-top: 1.9rem;
+}
+.slogan {
+  width: 100%;
+  height: 1.88rem;
+  margin-bottom: 0.95rem;
+  background: url('../img/slogan.png');
+  background-size: contain;
+}
+.form-login .form-field {
+  position: relative;
+  padding-bottom: 0.7rem;
+}
+.form-login .form-field i {
+  display: inline-block;
+  width: 0.56rem;
+  height: 0.63rem;
+  vertical-align: middle;
+  margin: 0 0.05rem 0 0.15rem;
+}
+.form-login .form-field .ipt-text-with-name {
+  display: inline-block;
+}
+.form-login .form-field .tip {
+  position: absolute;
+  top: 0.95rem;
+  left: 0.9rem;
+  font-size: 24px;
+  color: #fd7423;
+}
+
+/*************************/
