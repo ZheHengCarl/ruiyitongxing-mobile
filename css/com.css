@@ -13,7 +13,18 @@ body {
   background-color: #f6fcfe;
 }
 
-/******  icon  ******/
+/******  icon-font  ******/
+
+.iconfont.icon-huiyijiyao,
+.iconfont.icon-gongwenbao,
+.fa.fa-stethoscope,
+.fa.fa-vcard-o {
+  font-size: 36px;
+}
+
+.iconfont.icon-xiaoxi {
+  font-size: 72px;
+}
 
 /********************/
 
