@@ -1,5 +1,8 @@
 /********* login *********/
 .login {
+}
+.login .content {
+  min-height: 100%;
   padding-top: 1.9rem;
 }
 .slogan {
@@ -22,6 +25,7 @@
 }
 .form-login .form-field .ipt-text-with-name {
   display: inline-block;
+  vertical-align: middle;
 }
 .form-login .form-field .tip {
   position: absolute;
@@ -29,6 +33,68 @@
   left: 0.9rem;
   font-size: 24px;
   color: #fd7423;
+}
+.form-login .form-field .i-check{
+  position: absolute;
+  top: 0.3rem;
+  right: -0.65rem;
+  width: 0.29rem;
+  height: 0.19rem;
+}
+.form-login .btn-confirm {
+  width: 3.4rem;
+  margin-right: 0.4rem;
+}
+.form-login .btn-gray {
+  width: 1.9rem;
+}
+
+/*************************/
+
+/*************************/
+.register .content {
+  min-height: 100%;
+  padding-top: 1.55rem;
+  padding-bottom: 2.25rem;
+}
+.register .btn-next-step {
+  width: 3.4rem;
+  height: 0.8rem;
+}
+.register .btn-send-mscode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.8rem;
+  height: 0.8rem;
+  margin-top: 0;
+  border-radius: 0;
+}
+.register .vcode-bar {
+  display: inline-block;
+  width: 1.8rem;
+  height: 0.8rem;
+  vertical-align: top;
+  background-color: #CCC;
+  text-align: center;
+  line-height: 0.8rem;
+  color: #FFF;
+  font-size: 32px;
+}
+.link-to-login {
+  position: absolute;
+  top: 0.49rem;
+  left: 0.45rem;
+  font-size: 30px;
+  line-height: 55px;
+  color: #78859a;
+}
+.link-to-login .i-return-gray {
+  display: inline-block;
+  width: 0.49rem;
+  height: 0.33rem;
+  vertical-align: text-top;
+  margin-right: 16px;
 }
 
 /*************************/

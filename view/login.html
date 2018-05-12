@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>登录页</title>
+    <title>注册页</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=0.5,maxinum-scale=0.5,user-scalable=0">
     <link href="../css/reset.css" rel="stylesheet" />
@@ -11,30 +11,39 @@
     <link href="../css/iconfont.css" rel="stylesheet" />
     <link href="../css/page.css" rel="stylesheet" />
     <script src="../js/size.js"></script>
-    <style>
-    </style>
 </head>
 <body>
   <div id="wrapper" class="login">
-    <div class="slogan"></div>
-    <div class="form-login">
-      <div class="form-field">
-        <i class="i-login-account"></i>
-        <div class="ipt-text-with-name">
-          <label class="field-name" for="account"><span>员工邮箱</span>:</label>
-          <input class="field-value" id="account" type="text" placeholder="请输入邮箱">
+    <div class="content">
+      <div class="slogan"></div>
+      <div class="form-login">
+        <div class="form-field field-normal">
+          <i class="i-login-account"></i>
+          <div class="ipt-text-with-name">
+            <label class="field-name" for="account"><span>员工邮箱</span>:</label>
+            <div class="ipt-area">
+              <input class="field-value" id="account" type="text" placeholder="请输入邮箱">
+              <i class="i-check"></i>
+            </div>
+          </div>
+          <div class="tip tip-err">6-18位字符，至少包含1个字母和1个数字</div>
         </div>
-        <div class="tip tip-err">6-18位字符，至少包含1个字母和1个数字</div>
-      </div>
-      <div class="form-field">
-        <i class="i-login-pwd"></i>
-        <div class="ipt-text-with-name">
-          <label class="field-name" for="pwd"><span class="justify">密 码</span>:</label>
-          <input class="field-value" id="account" type="password" placeholder="请输入密码">
+        <div class="form-field field-normal">
+          <i class="i-login-pwd"></i>
+          <div class="ipt-text-with-name">
+            <label class="field-name" for="pwd"><span class="justify">密 码</span>:</label>
+            <div class="ipt-area">
+              <input class="field-value" id="account" type="password" placeholder="请输入密码">
+              <i class="i-check"></i>
+            </div>
+          </div>
+          <div class="tip tip-err">6-18位字符，至少包含1个字母和1个数字</div>
         </div>
-        <div class="tip tip-err">6-18位字符，至少包含1个字母和1个数字</div>
+        <div class="btn-bar">
+          <input type="button" class="btn-primary btn-confirm" value="登 录" />
+          <a href="register.html" class="btn-gray btn-register">注 册</a>
+        </div>
       </div>
-      <input type="button" class="btn-confirm" value="确 认" />
     </div>
     <footer class="copyright">
       <div><i class="i-hotline"></i>技术支持热线:4000621818</div>
