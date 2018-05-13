@@ -12,40 +12,40 @@
   background: url('../img/slogan.png');
   background-size: contain;
 }
-.form-login .form-field {
+.form-normal .form-field {
   position: relative;
   padding-bottom: 0.7rem;
 }
-.form-login .form-field i {
+.form-normal .form-field i {
   display: inline-block;
   width: 0.56rem;
   height: 0.63rem;
   vertical-align: middle;
   margin: 0 0.05rem 0 0.15rem;
 }
-.form-login .form-field .ipt-text-with-name {
+.form-normal .form-field .ipt-text-with-name {
   display: inline-block;
   vertical-align: middle;
 }
-.form-login .form-field .tip {
+.form-normal .form-field .tip {
   position: absolute;
   top: 0.95rem;
   left: 0.9rem;
   font-size: 24px;
   color: #fd7423;
 }
-.form-login .form-field .i-check{
+.form-normal .form-field .i-check{
   position: absolute;
   top: 0.3rem;
   right: -0.65rem;
   width: 0.29rem;
   height: 0.19rem;
 }
-.form-login .btn-confirm {
+.form-normal .btn-confirm {
   width: 3.4rem;
   margin-right: 0.4rem;
 }
-.form-login .btn-gray {
+.form-normal .btn-gray {
   width: 1.9rem;
 }
 
@@ -54,8 +54,11 @@
 /*************************/
 .register .content {
   min-height: 100%;
-  padding-top: 1.55rem;
+  padding-top: 1.35rem;
   padding-bottom: 2.25rem;
+}
+.register .slogan {
+  margin-bottom: 0.4rem;
 }
 .register .btn-next-step {
   width: 3.4rem;
@@ -80,6 +83,9 @@
   line-height: 0.8rem;
   color: #000;
   font-size: 32px;
+}
+.form-register .form-field{
+  padding-bottom: 0.2rem;
 }
 .link-to-login {
   position: absolute;
