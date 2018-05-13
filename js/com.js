@@ -1,5 +1,5 @@
 var LayerManager = function () {
-  var layers = {};
+  var layers = {}, opened = null
 
   var add = function (name, container, cover, wrap) {
     // container 弹出层内容 cover 弹出的遮罩层 都直接传class的名称不要带.
@@ -9,7 +9,10 @@ var LayerManager = function () {
       $('body').append(oJqDomCover)
     }
     oJqDomCover.bind('click', function () {
-      hide(name)
+      if (opened) {
+        hide(opened)
+        opened = null
+      }
     })
     layers[name] = {
       container: $('.' + container),
@@ -19,6 +22,7 @@ var LayerManager = function () {
   }
 
   var show = function (name) {
+    opened = name
     layers[name].container.fadeIn()
     layers[name].cover.fadeIn()
     if (layers[name].wrap) {

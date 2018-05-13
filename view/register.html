@@ -100,16 +100,32 @@
       我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。</p>
     </div>
   </div>
+  <div class="layer-warn-policy">
+    <i class="btn-close i-close"></i>
+    <div class="layer-content">请勾选并阅读隐私条款！</div>
+    <div class="layer-btn-bar">
+      <input type="button" class="btn-gray btn-close-layer" value="关 闭">
+    </div>
+  </div>
   <script src="../js/jquery-2.1.3.min.js"></script>
   <script src="../js/com.js"></script>
   <script>
     var layer = LayerManager()
     layer.add('policy', 'layer-privacy-policy', 'layer-cover-white', 'register')
+    layer.add('policyWarn', 'layer-warn-policy', 'layer-cover-white', 'register')
     $('.btn-open-privacy-policy').bind('click', function () {
       layer.show('policy')
     })
-    $('.btn-close').bind('click', function () {
+    $('.layer-privacy-policy .btn-close').bind('click', function () {
       layer.hide('policy')
+    })
+    $('.btn-next-step').bind('click', function () {
+      if (!$('.ipt-checkbox-policy:checked').length) {
+        layer.show('policyWarn')
+      }
+    })
+    $('.layer-warn-policy .btn-close, .layer-warn-policy .btn-close-layer').bind('click', function () {
+      layer.hide('policyWarn')
     })
   </script>
 </body>
