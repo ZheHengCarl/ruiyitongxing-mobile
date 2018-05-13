@@ -4,6 +4,7 @@
 .login .content {
   min-height: 100%;
   padding-top: 1.9rem;
+  padding-bottom: 2.25rem;
 }
 .login .btn-confirm {
   margin-right: 0.4rem;
@@ -39,7 +40,7 @@
 }
 /*************************/
 
-/*************************/
+/******** register *******/
 .register .content {
   min-height: 100%;
   padding-top: 1.35rem;
@@ -193,7 +194,9 @@
   display: none;
 }
 
-/*************************/
+/**********************************/
+
+/********* forgot-password *********/
 .forgot-password .content {
   min-height: 100%;
   padding-top: 1.35rem;
@@ -207,3 +210,180 @@
 .forgot-password .form-field {
   padding-bottom: 0.2rem;
 }
+/************************************/
+
+
+/*********** behalf-index ***********/
+.behalf-index {
+
+}
+.behalf-index .content {
+  min-height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2.25rem;
+}
+.behalf-index .virtual-scene {
+  width: 7.5rem;
+  height: 9.54rem;
+  background: url('../img/virtual-scene.png');
+  background-size: contain;
+}
+.behalf-index .content-head {
+  position: absolute;
+  top: 0.4rem;
+  height: 0.6rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 0.4rem;
+}
+.behalf-index .content-head .user-bar {
+  float: left;
+}
+.behalf-index .content-head .user-name {
+  font-size: 24px;
+  color: #1277be;
+}
+.behalf-index .content-head .btn-logout {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.4rem;
+  margin-left: 5px;
+  background-color: rgba(182, 191, 206, 0.3);
+  box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 24px;
+  color: #1277be;
+}
+.behalf-index .content-head .index-menu-container {
+  float: right;
+  position: relative;
+  width: 2.3rem;
+  height: 0.6rem;
+  background-color: #4596d5;
+  box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
+  border-radius: 0.3rem;
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 30px;
+  color: #FFF;
+}
+.index-menu:after {
+  content: '';
+  position: absolute;
+  top: -0.2rem;
+  right: 0.3rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #FFF;
+  box-shadow: -5px -5px 10px 0px rgba(73, 170, 225, 0.27);
+  z-index: 1;
+}
+.index-menu {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  width: 2.86rem;
+  background-color: #FFF;
+  color: #3375bb;
+  box-shadow: 0px 2px 114px 0px rgba(29, 29, 29, 0.25), 0px 2px 24px 0px rgba(73, 170, 225, 0.7);
+  z-index: 999;
+}
+.index-menu ul {
+  position: relative;
+  z-index: 2;
+}
+.index-menu li {
+  margin: 0 0.2rem;
+  border-bottom: 2px solid #e3effe;
+}
+.index-menu a {
+  display: block;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 30px;
+  color: #3375bb;
+}
+.index-menu span {
+  display: inline-block;
+  width: 1.2rem;
+  text-align-last: justify;
+}
+.index-menu i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.55rem;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.behalf-index .content-head .fa-bars {
+  margin-left: 10px;
+}
+.behalf-index .content-foot {
+  position: absolute;
+  left: 0.4rem;
+  right: 0.4rem;
+  bottom: 2.25rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 36px;
+}
+.link-bar {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  padding: 0 0.2rem 0 0.1rem;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
+  border-radius: 40px;
+  background-color: #d4edf8;
+}
+.behalf-index .content-foot a{
+  flex: 1;
+  -webkit-flex: 1;
+  color: #0073bb;
+  font-weight: bold;
+}
+.behalf-index .content-foot a span {
+  display: inline-block;
+  margin-left: 0.15rem;
+  transform: translate(0, -5px) scaleY(1.5);
+  -webkit-transform: translate(0, -5px) scaleY(1.5);
+  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+}
+.behalf-index .content-foot a i {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.behalf-index .content-foot a i.i-grab-order {
+  width: 0.55rem;
+  height: 0.58rem;
+  background: url('../img/icon/icon-nav2.png') no-repeat 0 0;
+  background-size: contain;
+}
+.behalf-index .content-foot a i.i-attend {
+  width: 0.64rem;
+  height: 0.63rem;
+  background: url('../img/icon/icon-nav1.png') no-repeat 0 0;
+  background-size: contain;
+}
+/************************************/
+
+
+
+
+
+
+
+
+
+
+

@@ -166,6 +166,7 @@ body {
 /********************/
 
 /******  layer  ******/
+.layer-cover,
 .layer-cover-black,
 .layer-cover-white {
   display: none;
@@ -174,8 +175,11 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.3);
   z-index: 998;
+}
+
+.layer-cover-black {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .layer-cover-white {
@@ -331,6 +335,20 @@ body {
 input:checked + .ipt-checkbox {
   background: url('../img/icon/icon-check2.png');
   background-size: contain;
+}
+
+.index-menu i {
+  background: url("../img/icon/icon-index1.png") no-repeat 0 0;
+  background: 100% auto;
+}
+.index-menu i.i-index-menu-2 {
+  background-position: 0 -0.92rem;
+}
+.index-menu i.i-index-menu-3 {
+  background-position: 0 -1.9rem;
+}
+.index-menu i.i-index-menu-4 {
+  background-position: 0 -2.83rem;
 }
 /********************/
 

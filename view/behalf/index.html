@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>瑞医同行</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=0.5,user-scalable=0">
+    <link href="../../css/reset.css" rel="stylesheet" />
+    <link href="../../css/com.css" rel="stylesheet" />
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../css/iconfont.css" rel="stylesheet" />
+    <link href="../../css/page.css" rel="stylesheet" />
+    <script src="../../js/size.js"></script>
+</head>
+<body>
+  <div id="wrapper" class="behalf-index">
+    <div class="content">
+      <div class="virtual-scene"></div>
+      <div class="content-head">
+        <div class="user-bar">
+          <span class="user-name">陈晓光</span>
+          <input type="button" class="btn-logout" value="退出">
+        </div>
+        <div class="index-menu-container">
+          <div class="btn-toggle-menu">更多功能<i class="fa fa-bars"></i></div>
+          <div class="index-menu">
+            <ul>
+              <li><a href="#"><i class="i-index-menu-1"></i><span>会后上传</span></a></li>
+              <li><a href="#"><i class="i-index-menu-2"></i><span>查看报告</span></a></li>
+              <li><a href="#"><i class="i-index-menu-3"></i><span>活跃值</span></a></li>
+              <li><a href="#"><i class="i-index-menu-4"></i><span>创建会议</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content-foot">
+        <div class="link-bar">
+          <a href="#" class="grab-order"><i class="i-grab-order"></i>我要抢单<span>&gt;&gt;</span></a>
+          <a href="#" class="grab-order"><i class="i-attend"></i>一键入会<span>&gt;&gt;</span></a>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright">
+      <div><i class="i-hotline"></i>技术支持热线:4000621818</div>
+      <div>上海会畅通讯股份有限公司 版权所有 沪ICP备11034277号-18</div>
+      <div><i class="i-copyright"></i>沪公网安备31010602002539号</div>
+    </footer>
+  </div>
+  <script src="../../js/jquery-2.1.3.min.js"></script>
+  <script src="../../js/com.js"></script>
+  <script>
+    var layer = LayerManager()
+    layer.add('indexMenu', 'index-menu', 'layer-cover')
+    $('.btn-toggle-menu').bind('click', function () {
+      layer.show('indexMenu')
+    })
+  </script>
+</body>
+</html>
