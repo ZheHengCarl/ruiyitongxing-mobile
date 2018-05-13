@@ -29,12 +29,13 @@ var LayerManager = function () {
 
   var hide = function (name) {
     layers[name].container.fadeOut()
-    layers[name].cover.fadeOut()
-    if (layers[name].wrap) {
-      var nCurScrollTop = layers[name].wrap.scrollTop()
-      layers[name].wrap.removeClass('temp-wrap')
-      document.documentElement.scrollTop = nCurScrollTop
-    }
+    layers[name].cover.fadeOut(function () {
+      if (layers[name].wrap) {
+        var nCurScrollTop = layers[name].wrap.scrollTop()
+        layers[name].wrap.removeClass('temp-wrap')
+        document.documentElement.scrollTop = nCurScrollTop
+      }
+    })
   }
 
   return {

@@ -198,6 +198,10 @@ body {
 .i-return-gray {
   background-image: url('../img/icon/icon-back-index.png');
 }
+.i-close {
+  background: url('../img/icon/i-close.png') no-repeat 0 0;
+  background-size: contain;
+}
 
 input:checked + .ipt-checkbox {
   background: url('../img/icon/icon-check2.png');

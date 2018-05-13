@@ -123,13 +123,43 @@
 }
 .layer-privacy-policy {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0.65rem;
   left: 0.25rem;
   bottom: 0.6rem;
   right: 0.25rem;
+  padding: 0.3rem;
   background-color: #FFF;
   z-index: 999;
+  box-shadow: 0px 10px 20px 0px rgba(0, 173, 228, 0.15);
 }
-
+.layer-privacy-policy .btn-close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.layer-privacy-policy .layer-title{
+  height: 1.74rem;
+  border-bottom: 6px solid #e0f0ff;
+  font-size: 54px;
+  line-height: 1.74rem;
+  text-align: center;
+  color: #0074b6;
+}
+.layer-privacy-policy .layer-content {
+  overflow: auto;
+  position: absolute;
+  top: 2.54rem;
+  left: 0;
+  right: 0;
+  bottom: 0.2rem;
+  padding: 0 0.3rem;
+  line-height: 32px;
+  font-size: 24px;
+  color: #818181;
+  text-align: justify;
+  letter-spacing: 3px;
+}
 /*************************/
