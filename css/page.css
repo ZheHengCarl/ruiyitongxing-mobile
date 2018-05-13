@@ -377,7 +377,14 @@
 }
 /************************************/
 
-
+/*********** conference-list ********/
+.conference-list .content{
+  overflow: auto;
+  position: absolute;
+  top: 1.2rem;
+  bottom: 1.2rem;
+  width: 100%;
+}
 
 
 

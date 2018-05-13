@@ -490,6 +490,7 @@ input:checked + .ipt-checkbox {
 #footer > div {
   flex: 1;
   -webkit-flex: 1;
+  box-sizing: border-box;
   height: 1.2rem;
   border-top: 10px solid #FFF;
   color: #9fa0a0;
