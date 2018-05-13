@@ -18,6 +18,52 @@ body {
 }
 
 /******  form  ******/
+.form-normal .form-field {
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+  padding-bottom: 0.7rem;
+  align-items: center;
+}
+.form-normal .form-field i.i-form-field {
+  display: inline-block;
+  width: 0.56rem;
+  height: 0.63rem;
+  margin: 0 0.10rem 0 0.20rem;
+}
+.form-normal .form-field .ipt-text-with-name {
+  /* display: inline-block; */
+  display: flex;
+  display: -webkit-flex;
+}
+.form-normal .form-field .tip {
+  position: absolute;
+  top: 0.95rem;
+  left: 0.9rem;
+  font-size: 24px;
+}
+.form-normal .form-field .tip-err {
+  color: #fd7423;
+}
+.form-normal .form-field .i-check,
+.form-normal .form-field .i-fork {
+  position: absolute;
+  top: 0.3rem;
+  right: -0.65rem;
+  width: 0.29rem;
+  height: 0.19rem;
+}
+.form-normal .form-field .i-fork {
+  right: -0.58rem;
+  width: 0.2rem;
+  height: 0.2rem;
+}
+.form-normal .btn-confirm {
+  width: 3.4rem;
+}
+.form-normal .btn-gray {
+  width: 1.9rem;
+}
 .ipt-text-with-name {
   position: relative;
   overflow: hidden;
@@ -34,14 +80,17 @@ body {
   line-height: 0.3rem;
   font-size: 0.3rem;
   vertical-align: top;
+  color: #1277be;
 }
 .ipt-text-with-name .field-name span{
   display: inline-block;
   overflow: hidden;
-  width: 1.2rem;
   height: 0.3rem;
   margin-right: 5px;
   vertical-align: middle;
+}
+.ipt-text-with-name .field-name span.justify {
+  width: 1.2rem;
 }
 .ipt-text-with-name .field-value {
   position: relative;
@@ -53,7 +102,8 @@ body {
 }
 .ipt-text-with-name .ipt-area {
   position: relative;
-  display: inline-block;
+  flex: 1;
+  -webkit-flex: 1;
   margin-right: 0.86rem;
 }
 .field-normal .ipt-area {
@@ -62,12 +112,28 @@ body {
 .field-width-btn .ipt-area {
   width: 1.95rem;
 }
+.form-field .btn-send-mscode {
+  width: 1.8rem;
+  height: 0.8rem;
+  margin-top: 0;
+  border-radius: 0;
+}
+.form-field .vcode-bar {
+  overflow: hidden;
+  display: inline-block;
+  width: 1.8rem;
+  height: 0.8rem;
+  vertical-align: top;
+  text-align: center;
+  line-height: 0.8rem;
+  color: #000;
+  font-size: 32px;
+}
 
 .btn-primary,
 .btn-gray {
   display: inline-block;
   height: 0.8rem;
-  margin: 10px auto 0;
   background-color: #1277be;
   box-shadow: 0px 10px 20px 0px rgba(28, 174, 226, 0.15);
   border-radius: 40px;
@@ -85,7 +151,6 @@ body {
 .btn-bar {
   text-align: center;
 }
-
 .justify {
   text-justify: inter-ideograph;
   text-align: justify;
@@ -125,6 +190,50 @@ body {
   right: 0;
   overflow: hidden;
 }
+
+.layer-res-status {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.6rem;
+  height: 6.8rem;
+  margin: -3.4rem 0 0 -3.3rem;
+  padding-top: 6rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-color: #1277be;
+  z-index: 999;
+}
+.layer-res-status .btn-close {
+  display: inline-block;
+  width: 1.4rem;
+  height: 0.6rem;
+  background-color: #47d6ff;
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  border-radius: 0.3rem;
+  text-align: center;
+  line-height: 0.6rem;
+  color: #FFF;
+  font-size: 30px;
+}
+.layer-res-status .i-close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.layer-res-data-wrong {
+  background-image: url('../img/res-data-wrong.png');
+}
+.layer-res-sub-success {
+  background-image: url('../img/res-sub-suc.png');
+}
+.layer-res-edit-success {
+  background-image: url('../img/res-edit-suc.png');
+}
 /********************/
 
 /******  icon-font  ******/
@@ -155,11 +264,14 @@ body {
 .i-bar2-4 { background-position: 0 -1.47rem; }
 
 .i-login-account,
+.i-forgot-pwd,
+.i-change-pwd,
 .i-login-pwd,
 .i-user-name,
 .i-user-phone,
 .i-vcode,
-.i-mscode {
+.i-mscode,
+.i-new-pwd {
   background-image: url("../img/icon/icon-login-list.png");
   background-repeat: no-repeat;
   background-size: 0.56rem auto;
@@ -170,6 +282,12 @@ body {
 }
 .i-login-pwd {
   background-position: 0 -0.63rem;
+}
+.i-forgot-pwd {
+  background-position: 0 -1.26rem;
+}
+.i-change-pwd {
+  background-position: 0 -1.89rem;
 }
 .i-user-name {
   background-position: 0 -2.62rem;
@@ -183,6 +301,9 @@ body {
 .i-mscode {
   background-position: 0 -4.75rem;
 }
+.i-new-pwd {
+  background-position: 0 -5.45rem;
+}
 
 .i-hotline {
   background: url('../img/icon/icon-hotline.png');
@@ -192,7 +313,11 @@ body {
 }
 
 .i-check {
-  background-image: url('../img/icon/icon-check.png');
+  background-image: url('../img/icon/i-check.png');
+  background-repeat: no-repeat;
+}
+.i-fork {
+  background-image: url('../img/icon/i-fork.png');
   background-repeat: no-repeat;
 }
 .i-return-gray {

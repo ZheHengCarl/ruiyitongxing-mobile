@@ -5,6 +5,9 @@
   min-height: 100%;
   padding-top: 1.9rem;
 }
+.login .btn-confirm {
+  margin-right: 0.4rem;
+}
 .slogan {
   width: 100%;
   height: 1.88rem;
@@ -12,43 +15,28 @@
   background: url('../img/slogan.png');
   background-size: contain;
 }
-.form-normal .form-field {
-  position: relative;
-  padding-bottom: 0.7rem;
+.link-user-pwd-tip {
+  padding-top: 1.5rem;
+  line-height: 55px;
+  text-align: center;
+  font-size: 28px;
 }
-.form-normal .form-field i {
+.link-user-pwd-tip a {
+  display: inline-block;
+  margin: 0 0.3rem;
+  color: #4596d5;
+}
+.link-user-pwd-tip i{
   display: inline-block;
   width: 0.56rem;
   height: 0.63rem;
+  margin-right: 10px;
   vertical-align: middle;
-  margin: 0 0.05rem 0 0.15rem;
 }
-.form-normal .form-field .ipt-text-with-name {
+.link-user-pwd-tip span {
   display: inline-block;
   vertical-align: middle;
 }
-.form-normal .form-field .tip {
-  position: absolute;
-  top: 0.95rem;
-  left: 0.9rem;
-  font-size: 24px;
-  color: #fd7423;
-}
-.form-normal .form-field .i-check{
-  position: absolute;
-  top: 0.3rem;
-  right: -0.65rem;
-  width: 0.29rem;
-  height: 0.19rem;
-}
-.form-normal .btn-confirm {
-  width: 3.4rem;
-  margin-right: 0.4rem;
-}
-.form-normal .btn-gray {
-  width: 1.9rem;
-}
-
 /*************************/
 
 /*************************/
@@ -60,32 +48,19 @@
 .register .slogan {
   margin-bottom: 0.4rem;
 }
+.register .btn-bar {
+  padding-top: 0.2rem;
+}
 .register .btn-next-step {
   width: 3.4rem;
   height: 0.8rem;
 }
-.register .btn-send-mscode {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 1.8rem;
-  height: 0.8rem;
-  margin-top: 0;
-  border-radius: 0;
-}
-.register .vcode-bar {
-  overflow: hidden;
-  display: inline-block;
-  width: 1.8rem;
-  height: 0.8rem;
-  vertical-align: top;
-  text-align: center;
-  line-height: 0.8rem;
-  color: #000;
-  font-size: 32px;
-}
-.form-register .form-field{
+.form-register-step-1 .form-field{
   padding-bottom: 0.2rem;
+}
+.form-register-step-2 {
+  display: none;
+  padding-top: 1rem;
 }
 .link-to-login {
   position: absolute;
@@ -139,7 +114,7 @@
   z-index: 999;
   box-shadow: 0px 10px 20px 0px rgba(0, 173, 228, 0.15);
 }
-.layer-privacy-policy .btn-close {
+.layer-privacy-policy .i-close {
   position: absolute;
   top: 0.2rem;
   right: 0.2rem;
@@ -182,7 +157,7 @@
   border: solid 3px #ffffff;
   z-index: 999;
 }
-.layer-warn-policy .btn-close {
+.layer-warn-policy .i-close {
   position: absolute;
   top: 0.2rem;
   right: 0.2rem;
@@ -206,3 +181,29 @@
   line-height: 0.6rem;
 }
 /*************************/
+
+/********* change-password *********/
+
+.change-password .content {
+  min-height: 100%;
+  padding-top: 1.35rem;
+  padding-bottom: 2.25rem;
+}
+.change-password .tip-err {
+  display: none;
+}
+
+/*************************/
+.forgot-password .content {
+  min-height: 100%;
+  padding-top: 1.35rem;
+  padding-bottom: 2.25rem;
+}
+
+.forgot-password .btn-bar {
+  padding-top: 0.2rem;
+}
+
+.forgot-password .form-field {
+  padding-bottom: 0.2rem;
+}

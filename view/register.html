@@ -16,9 +16,9 @@
     <div class="content">
       <a href="login.html" class="link-to-login"><i class="i-return-gray"></i>返回首页</a>
       <div class="slogan"></div>
-      <div class="form-normal form-register">
+      <div class="form-normal form-register form-register-step-1">
         <div class="form-field field-normal">
-          <i class="i-login-account"></i>
+          <i class="i-form-field i-login-account"></i>
           <div class="ipt-text-with-name">
             <label class="field-name" for="account"><span>员工邮箱</span>:</label>
             <div class="ipt-area">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="form-field field-normal">
-          <i class="i-user-name"></i>
+          <i class="i-form-field i-user-name"></i>
           <div class="ipt-text-with-name">
             <label class="field-name" for="pwd"><span class="justify">姓 名</span>:</label>
             <div class="ipt-area">
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="form-field field-normal">
-          <i class="i-user-phone"></i>
+          <i class="i-form-field i-user-phone"></i>
           <div class="ipt-text-with-name">
             <label class="field-name" for="pwd"><span class="justify">手 机 号</span>:</label>
             <div class="ipt-area">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="form-field field-width-btn">
-          <i class="i-vcode"></i>
+          <i class="i-form-field i-vcode"></i>
           <div class="ipt-text-with-name">
             <label class="field-name" for="pwd"><span class="justify">校 验 码</span>:</label>
             <div class="ipt-area">
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="form-field field-width-btn">
-          <i class="i-mscode"></i>
+          <i class="i-form-field i-mscode"></i>
           <div class="ipt-text-with-name">
             <label class="field-name" for="pwd"><span class="justify">验 证 码</span>:</label>
             <div class="ipt-area">
@@ -75,6 +75,33 @@
         <div class="bar-privacy-policy">
           <label><input type="checkbox" class="ipt-checkbox-policy"><i class="ipt-checkbox"></i></label>
           <span class="btn-open-privacy-policy">隐私政策</span>
+        </div>
+      </div>
+      <div class="form-normal form-register form-register-step-2">
+        <div class="form-field field-normal">
+          <i class="i-form-field i-login-pwd"></i>
+          <div class="ipt-text-with-name">
+            <label class="field-name" for="pwd"><span>设置密码</span>:</label>
+            <div class="ipt-area">
+              <input class="field-value" id="account" type="password" placeholder="请输入密码">
+              <i class="i-check"></i>
+            </div>
+          </div>
+          <div class="tip tip-err">6-18位字符，至少包含1个字母和1个数字</div>
+        </div>
+        <div class="form-field field-normal">
+          <i class="i-form-field i-new-pwd"></i>
+          <div class="ipt-text-with-name">
+            <label class="field-name" for="pwd"><span>再次输入密码</span>:</label>
+            <div class="ipt-area">
+              <input class="field-value" id="account" type="password" placeholder="请再次输入密码">
+              <i class="i-fork"></i>
+            </div>
+          </div>
+          <div class="tip tip-err">6-18位字符，至少包含1个字母和1个数字</div>
+        </div>
+        <div class="btn-bar">
+          <input type="button" class="btn-primary btn-next-step" value="确认" />
         </div>
       </div>
     </div>
@@ -117,6 +144,9 @@
     $('.btn-next-step').bind('click', function () {
       if (!$('.ipt-checkbox-policy:checked').length) {
         layer.show('policyWarn')
+      } else {
+        $('.form-register-step-1').hide()
+        $('.form-register-step-2').show()
       }
     })
     $('.layer-warn-policy .btn-close, .layer-warn-policy .btn-close-layer').bind('click', function () {
