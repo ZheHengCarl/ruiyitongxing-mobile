@@ -48,5 +48,5 @@ var LayerManager = function () {
     hide: hide,
   }
 }
-$('.btn-confirm').bind('click', function () {
-})
+
+
