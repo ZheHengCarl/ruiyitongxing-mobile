@@ -378,19 +378,133 @@
 /************************************/
 
 /*********** conference-list ********/
-.conference-list .content{
+.conference .content{
+}
+.main-content {
   overflow: auto;
   position: absolute;
-  top: 1.2rem;
-  bottom: 1.2rem;
+  top: 0.98rem;
+  bottom: 0.2rem;
   width: 100%;
+  box-sizing: border-box;
+}
+.conference-list-nav {
+  height: 0.78rem;
+  margin: 0 0.2rem;
+  border-bottom: 2px solid #e0f0ff;
+}
+.conference-list-nav a {
+  display: inline-block;
+  width: 0.9rem;
+  text-align: center;
+  color: #b8c1ce;
+}
+.conference-list-nav a.cur {
+  color: #006ab4;
+}
+.conference-list-nav a i{
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin: 0.1rem 0;
+  font-size: 0.32rem;
+}
+.conference-list-nav a span {
+  display: block;
+}
+.conference-list {
+  padding: 0.2rem;
+}
+.conference-list li{
+  box-sizing: border-box;
+  min-height: 4rem;
+  margin-bottom: 0.2rem;
+  padding: 0.1rem;
+  box-shadow: 0px 3px 15px 0px rgba(0, 173, 228, 0.33);
+}
+.conference-info {
+  padding-left: 0.3rem;
+  font-size: 20px;
+}
+.conference-info-top {
+  overflow: hidden;
+  height: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+.conference-info-top img {
+  width: 5.5rem;
+}
+.conference-status {
+  float: right;
+  width: 1rem;
+  height: 1.8rem;
+  background-color: #b8c1ce;
+  font-size: 24px;
+  color: #FFF;
+  text-align: center;
+}
+.conference-status i {
+  display: block;
+  width: 0.37rem;
+  height: 0.37rem;
+  margin: 0.5rem auto 0.1rem;
+}
+.conference-status.is-grabed {
+  background-color: #1277be;
+}
+.conference-status.is-grabed i{
+  background-position: 0 -0.37rem;
 }
 
+.conference-info p {
+  color: #78859a;
+}
+.conference-info p label {
+  display: inline-block;
+  width: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  text-align-last: justify;
+  vertical-align: top;
+}
+.conference-info p span {
+  display: inline-block;
+  width: 4.5rem;
+  vertical-align: top;
+}
+.conference-btn-bar {
+  padding: 0.2rem 0 0.1rem;
+  text-align: center;
+}
+.conference-btn-bar a{
+  display: inline-block;
+  width: 1.35rem;
+  height: 0.5rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #FFF;
+  font-size: 24px;
+}
+.conference-btn-bar i {
+  margin-right: 0.1rem;
+}
+.btn-edit-confer {
+  background-color: #4596d5;
+}
+.btn-edit-confer i {
 
+}
+.btn-del-confer {
+  background-color: #45cbe4;
+}
+.btn-del-confer i {
 
+}
+.btn-grab-confer {
+  background-color: #fd7423;
+}
+.btn-grab-confer i {
 
-
-
-
-
-
+}

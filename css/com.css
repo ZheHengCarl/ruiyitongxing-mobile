@@ -16,6 +16,24 @@ body {
 .content {
   box-sizing: border-box;
 }
+.body {
+  overflow: auto;
+  position: absolute;
+  top: 1.2rem;
+  bottom: 1.2rem;
+  width: 100%;
+  background-color: #fbfeff;
+}
+.main {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.2rem;
+  bottom: 0.3rem;
+  left: 0.2rem;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
 
 /******  form  ******/
 .form-normal .form-field {
@@ -245,7 +263,10 @@ body {
 .iconfont.icon-huiyijiyao,
 .iconfont.icon-gongwenbao,
 .fa.fa-stethoscope,
-.fa.fa-vcard-o {
+.fa.fa-vcard-o,
+.iconfont.icon-trophy_icon,
+.iconfont.icon-dituleiditu,
+.iconfont.icon-shixunchengji {
   font-size: 36px;
 }
 
@@ -253,12 +274,21 @@ body {
   font-size: 72px;
 }
 
-#footer > div i{
+.behalf-footer > div i {
+  background-image: url("../img/icon/icon-bar.png");
+  background-size: contain;
+  background-size: 0.46rem auto;
+}
+.behalf-footer > div.cur i {
+  background-image: url("../img/icon/icon-bar-active.png");
+}
+
+.brand-footer > div i {
   background-image: url("../img/icon/icon-bar2.png");
   background-size: contain;
   background-size: 0.46rem auto;
 }
-#footer > div.cur i {
+.brand-footer > div.cur i {
   background-image: url("../img/icon/icon-bar-active2.png");
 }
 
@@ -266,6 +296,13 @@ body {
 .i-bar2-2 { background-position: 0 -0.49rem; }
 .i-bar2-3 { background-position: 0 -0.98rem; }
 .i-bar2-4 { background-position: 0 -1.47rem; }
+
+.i-bar-1 { background-position: 0 0; }
+.i-bar-2 { background-position: 0 -0.55rem; }
+.i-bar-3 { background-position: 0 -1.08rem; }
+.i-bar-4 { background-position: 0 -1.66rem; }
+.i-bar-5 { background-position: 0 -2.17rem; }
+.i-bar-6 { background-position: 0 -2.7rem; }
 
 .i-login-account,
 .i-forgot-pwd,
@@ -350,6 +387,22 @@ input:checked + .ipt-checkbox {
 .index-menu i.i-index-menu-4 {
   background-position: 0 -2.83rem;
 }
+
+.side-nav .side-nav-head p i{
+  background: url("../img/icon/icon-nav-bottom.png") no-repeat 0 0;
+  background-size: 0.24rem auto;
+}
+.side-nav .side-nav-head p i.i-book {
+  background-position: 0 -0.25rem;
+}
+.side-nav .side-nav-head p i.i-notepad {
+  background-position: 0 -0.5rem;
+}
+
+.conference-status i {
+  background: url("../img/icon/icon-meekting-state.png") no-repeat 0 0;
+  background-size: 0.37rem auto;
+}
 /********************/
 
 
@@ -357,12 +410,15 @@ input:checked + .ipt-checkbox {
 
 /****** header ******/
 #header {
+  position: relative;
   display: flex;
   display: -webkit-flex;
   width: 100%;
   height: 1.2rem;
   background-color: #FFF;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
+  z-index: 1;
 }
 #header .link-return {
   width: 1.24rem;
@@ -451,16 +507,28 @@ input:checked + .ipt-checkbox {
   background-color: #FFF;
   border-radius: 10px;
   z-index: 999;
+  font-size: 24px;
+  color: #9499a3;
 }
 .side-nav .side-nav-head {
   display: block;
   box-sizing: border-box;
-  height: 2.5rem;
   padding: 0.51rem 0 0 0.25rem;
   border-bottom: 2px solid #e6f1f6;
 }
 .side-nav .side-nav-head p {
   padding-bottom: 0.43rem;
+}
+.side-nav .side-nav-head p i {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  vertical-align: middle;
+  margin-right: 0.1rem;
+}
+.side-nav .side-nav-head p span {
+  display: inline-block;
+  vertical-align: middle;
 }
 .side-nav .side-nav-foot {
   display: block;
@@ -470,6 +538,15 @@ input:checked + .ipt-checkbox {
 }
 .co-info {
   padding: 0.47rem 0 0.31rem 0 ;
+}
+.co-code .i-copyright {
+  display: inline-block;
+  width: 0.28rem;
+  height: 0.28rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 0.02rem;
 }
 /********************/
 
@@ -486,6 +563,7 @@ input:checked + .ipt-checkbox {
   height: 1.2rem;
   text-align: center;
   background-color: #FFF;
+  box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.1);
 }
 #footer > div {
   flex: 1;
