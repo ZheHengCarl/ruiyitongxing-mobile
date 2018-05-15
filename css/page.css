@@ -726,3 +726,75 @@
 }
 
 /*********************************/
+
+/*********************************/
+.conference-report .main-top{
+  height: 0.78rem;
+  margin: 0 0.2rem;
+  border-bottom: 2px solid #e0f0ff;
+  align-items: center;
+  font-size: 24px;
+  color: #1277be;
+}
+.conference-report .form-report{
+  margin: 0 0.5rem;
+  font-size: 24px;
+}
+.conference-report .form-report .form-field {
+  display: flex;
+  display: -webkit-flex;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #1277be;
+}
+.conference-report .form-report .form-field:last-child {
+  border: none;
+}
+.conference-report .form-report .form-field i {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.conference-report .form-report .field-name {
+  width: 0.8rem;
+  line-height: 0.44rem;
+  color: #1277be;
+}
+.form-field-rt {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.select-bar,
+.ipt-date-time {
+  position: relative;
+  display: block;
+  width: 4.6rem;
+  height: 0.44rem;
+  border: 2px solid #1277be;
+  border-radius: 0.22rem;
+  line-height: 0.44rem;
+}
+.select-bar .select-value,
+.ipt-date-time .date-time-val {
+  padding-left: 0.35rem;
+  color: #78859a;
+}
+.ipt-date-time:first-child {
+  margin-bottom: 0.35rem;
+}
+.select-bar select,
+.ipt-date-time input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.44rem;
+  font-size: 24px;
+  opacity: 0;
+}
+
+.report-data-chart {
+  width: 6.05rem;
+  height: 2.9rem;
+  margin: 0.2rem auto 0;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+/*********************************/
