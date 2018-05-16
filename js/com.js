@@ -65,3 +65,66 @@ Date.prototype.Format = function (fmt) { //author: meizz
     return fmt;
 }
 
+
+
+/**
+ * 报表图表
+ *
+ * init 初始化方法
+ *
+ * data 数据结构
+ *
+ * [{ title: '场次', value: 15, unit: '场' }, {title: '时长', value: 3, unit: '小时'}, {title: '人数', value: 56, unit: '个'}]
+ */
+var Chart = function (config) {
+  var max = 60, yAxisHtml, xAxisHtml, gridHtml;
+
+  var checkMax = function () {
+    for (var i = 0, len = config.data.length; i < len; i++) {
+      if (config.data[i].value > max) {
+        max = config.data[i].value
+      }
+    }
+  }
+
+  var renderY = function () {
+    yAxisHtml = '<div class="y-axis">';
+    for (var i = 0, len = config.data.length; i < len; i++) {
+      yAxisHtml += '<div><span class="name">'+ config.data[i].title +'</span><span class="unit">('+ config.data[i].unit +')</span></div>';
+    }
+    yAxisHtml += '</div>';
+  }
+
+  var renderX = function () {
+    var xUnit = Math.ceil(max / 12)
+    xAxisHtml = '<div class="x-axis">'
+    for (var i = 1; i < 4; i++) {
+      xAxisHtml += '<div>'+ (xUnit * i * 3) +'</div>'
+    }
+    xAxisHtml += '</div>'
+  }
+
+  var renderChart = function () {
+    gridHtml = '<div class="chart"><div class="grids">';
+    for (var i = 0; i < 12; i++) {
+      gridHtml += '<div></div>';
+    }
+    gridHtml += '</div><div class="bars">'
+    for (var i = 0, len = config.data.length; i < len; i++) {
+      gridHtml += '<div class="'+ config.classes[i] +'" style="width: '+ (config.data[i].value / max) * 100 +'%"></div>';
+    }
+    gridHtml += '</div></div>';
+  }
+
+  var init = function () {
+    checkMax()
+    renderX()
+    renderY()
+    renderChart()
+    $(config.elm).html(xAxisHtml + yAxisHtml + gridHtml)
+  }
+
+  return {
+    init: init
+  }
+}

@@ -109,9 +109,6 @@
             </div>
           </div>
           <div id="report-data-chart">
-
-            <div class="grid"></div>
-            <div class="x-axis"></div>
           </div>
         </div>
       </div>
@@ -145,62 +142,14 @@
       $this.parents('.ipt-date-time').find('.date-time-val').text($this.val());
     })
 
-    /**
-     * 报表图表
-     *
-     * init 初始化方法
-     *
-     * data 数据结构
-     *
-     * [{ title: '场次', value: 15, unit: '场' }, {title: '时长', value: 3, unit: '小时'}, {title: '人数', value: 56, unit: '个'}]
-     */
-    var Chart = function (config) {
-      var max = 60;
-      var xAxis = $('<div class="x-axis"></div>')
-      var yAxis = $('<div class="yAxis"></div>')
-      var grid = $('<div class="grid"></div>')
-
-      var initMax = function () {
-        for (var i = 0, len = config.data.length; i < len; i++) {
-          if (config.data[i].value > max) {
-            max = config.data[i].value
-          }
-        }
-      }
-
-      var renderY = function () {
-        for (var i = 0, len = config.data.length; i < len; i++) {
-          yAxis.append('<div class="">'+ config.data[i].title +'</div>')
-          grid.append('<div></div>')
-        }
-      }
-
-      var renderX = function () {
-        var xUnit = Math.ceil(max / 12)
-        for (var i = 1; i < 4; i++) {
-          xAxis.append('<div>'+ (xUnit * i * 3) +'</div>')
-        }
-      }
-
-      var init = function () {
-        initMax()
-        renderX()
-        renderY()
-        $(config.elm).append(xAxis).append(yAxis).append(grid)
-      }
-
-      return {
-        init: init
-      }
-    }
-
     var tempConfig = {
       elm: '#report-data-chart',
       data: [
         { title: '场次', value: 15, unit: '场' },
         {title: '时长', value: 3, unit: '小时'},
         {title: '人数', value: 56, unit: '个'}
-      ]
+      ],
+      classes: ['bg-orange', 'bg-light-blue', 'bg-blue']
     }
     var $chart = Chart(tempConfig)
     $chart.init(tempConfig)
