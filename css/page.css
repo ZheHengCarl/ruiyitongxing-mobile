@@ -727,7 +727,7 @@
 
 /*********************************/
 
-/*********************************/
+/******* conference-report *******/
 .conference-report .main-top{
   height: 0.78rem;
   margin: 0 0.2rem;
@@ -776,8 +776,8 @@
 .ipt-date-time:not(.read-only):after {
   content: '';
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.1rem;
+  right: 0.1rem;
   width: 0.34rem;
   height: 0.28rem;
   background: url('../img/i-arrow-down.png') no-repeat 0 0;
@@ -895,5 +895,98 @@ div.bg-light-blue {
 }
 div.bg-blue {
   background-image: linear-gradient(0, #0175c0, #239cd4);
+}
+/*********************************/
+
+/******* conference-upload *******/
+
+.conference-upload .main-top{
+  height: 0.78rem;
+  margin: 0 0.2rem;
+  border-bottom: 2px solid #e0f0ff;
+  align-items: center;
+  font-size: 24px;
+  color: #1277be;
+}
+.conference-upload .secs{
+  margin: 0 0 0 0.47rem;
+}
+.conference-upload .sec {
+  display: flex;
+  display: -webkit-flex;
+  padding-top: 0.5rem;
+}
+.conference-upload .sec i {
+  width: 0.34rem;
+  height: 0.36rem;
+  vertical-align: top;
+}
+.conference-upload .sec .sec-rt {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.conference-upload .sec .sec-title{
+  margin-bottom: 0.24rem;
+  font-size: 24px;
+  color: #1277be;
+}
+.sec-file-list li {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  width: 2.7rem;
+  height: 1.8rem;
+  margin-bottom: 0.2rem;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.sec-file-list li:nth-child(odd) {
+  margin-right: 0.2rem;
+}
+.sec-file-list .btn-upload {
+  padding-top: 0.4rem;
+  background: #edeff3;
+  text-align: center;
+  font-size: 24px;
+  color: #78859a;
+}
+.sec-file-list .btn-upload input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sec-file-list .btn-upload i {
+  display: block;
+  width: 0.56rem;
+  height: 0.56rem;
+  margin: 0 auto 0.2rem;
+  background: url('../img/icon/i-upload.png') no-repeat 0 0;
+  background-size: contain;
+}
+.sec-file-list li:not(.btn-upload) {
+}
+.sec-file-list li .file {
+  width: 2.42rem;
+  height: 1.8rem;
+  margin: 0 auto;
+  background: url('../img/file-pic.png') no-repeat 0 0;
+  background-size: contain;
+}
+.sec-file-list li .btn-del-file {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  width: 0.46rem;
+  height: 0.46rem;
+  background: url('../img/i-del-file.png') no-repeat 0 0;
+  background-size: contain;
+}
+.uploaded-pic {
+  display: block;
+  width: 2.7rem;
+  height: 1.8rem;
 }
 /*********************************/
