@@ -727,7 +727,7 @@
 
 /*********************************/
 
-/*********************************/
+/******* conference-report *******/
 .conference-report .main-top{
   height: 0.78rem;
   margin: 0 0.2rem;
@@ -772,6 +772,18 @@
   border-radius: 0.22rem;
   line-height: 0.44rem;
 }
+.select-bar:not(.read-only):after,
+.ipt-date-time:not(.read-only):after {
+  content: '';
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  width: 0.34rem;
+  height: 0.28rem;
+  background: url('../img/i-arrow-down.png') no-repeat 0 0;
+  background-size: contain;
+  z-index: 1;
+}
 .select-bar .select-value,
 .ipt-date-time .date-time-val {
   padding-left: 0.35rem;
@@ -789,12 +801,192 @@
   height: 0.44rem;
   font-size: 24px;
   opacity: 0;
+  z-index: 2;
+}
+.form-field-rt .read-only {
+  border-color: transparent;
+}
+.form-field-rt .read-only input,
+.form-field-rt .read-only select {
+  display: none;
 }
 
-.report-data-chart {
+#report-data-chart {
+  position: relative;
   width: 6.05rem;
-  height: 2.9rem;
+  height: 3.2rem;
   margin: 0.2rem auto 0;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+#report-data-chart .y-axis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.77rem;
+  padding-top: 0.35rem;
+  padding-left: 0.1rem;
+  text-align: center;
+}
+#report-data-chart .y-axis div{
+  height: 0.65rem;
+  padding-bottom: 0.1rem;
+}
+#report-data-chart .y-axis .name {
+  display: block;
+  font-size: 24px;
+  color: #1277be;
+}
+#report-data-chart .y-axis .unit {
+  color: #bbc3d1;
+}
+#report-data-chart .x-axis {
+  position: absolute;
+  top: 2.65rem;
+  left: 1.25rem;
+  display: flex;
+  display: -webkit-flex;
+  width: 4.8rem;
+}
+#report-data-chart .x-axis div {
+  margin-left: 0.4rem;
+  width: 0.8rem;
+  font-size: 20px;
+  text-align: center;
+  color: #1277be;
+}
+#report-data-chart .chart {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.85rem;
+}
+#report-data-chart .grids {
+  display: flex;
+  display: -webkit-flex;
+  width: 4.8rem;
+  height: 2.4rem;
+  border-bottom: 2px solid #f4fafc;
+  border-right: 2px solid #f4fafc;
+}
+#report-data-chart .grids div {
+  flex: 1;
+  -webkit-flex: 1;
+  /* box-sizing: border-box; */
+  /* f4fafc */
+  border-left: 2px solid #f4fafc;
+}
+#report-data-chart .bars {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#report-data-chart .bars div {
+  height: 0.55rem;
+  margin: 0 0 0.2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+div.bg-orange {
+  background-image: linear-gradient(0, #ff7403, #ff9a40);
+}
+div.bg-light-blue {
+  background-image: linear-gradient(0, #00a6ff, #00c1ff);
+}
+div.bg-blue {
+  background-image: linear-gradient(0, #0175c0, #239cd4);
+}
+/*********************************/
+
+/******* conference-upload *******/
+
+.conference-upload .main-top{
+  height: 0.78rem;
+  margin: 0 0.2rem;
+  border-bottom: 2px solid #e0f0ff;
+  align-items: center;
+  font-size: 24px;
+  color: #1277be;
+}
+.conference-upload .secs{
+  margin: 0 0 0 0.47rem;
+}
+.conference-upload .sec {
+  display: flex;
+  display: -webkit-flex;
+  padding-top: 0.5rem;
+}
+.conference-upload .sec i {
+  width: 0.34rem;
+  height: 0.36rem;
+  vertical-align: top;
+}
+.conference-upload .sec .sec-rt {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.conference-upload .sec .sec-title{
+  margin-bottom: 0.24rem;
+  font-size: 24px;
+  color: #1277be;
+}
+.sec-file-list li {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  width: 2.7rem;
+  height: 1.8rem;
+  margin-bottom: 0.2rem;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.sec-file-list li:nth-child(odd) {
+  margin-right: 0.2rem;
+}
+.sec-file-list .btn-upload {
+  padding-top: 0.4rem;
+  background: #edeff3;
+  text-align: center;
+  font-size: 24px;
+  color: #78859a;
+}
+.sec-file-list .btn-upload input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sec-file-list .btn-upload i {
+  display: block;
+  width: 0.56rem;
+  height: 0.56rem;
+  margin: 0 auto 0.2rem;
+  background: url('../img/icon/i-upload.png') no-repeat 0 0;
+  background-size: contain;
+}
+.sec-file-list li:not(.btn-upload) {
+}
+.sec-file-list li .file {
+  width: 2.42rem;
+  height: 1.8rem;
+  margin: 0 auto;
+  background: url('../img/file-pic.png') no-repeat 0 0;
+  background-size: contain;
+}
+.sec-file-list li .btn-del-file {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  width: 0.46rem;
+  height: 0.46rem;
+  background: url('../img/i-del-file.png') no-repeat 0 0;
+  background-size: contain;
+}
+.uploaded-pic {
+  display: block;
+  width: 2.7rem;
+  height: 1.8rem;
 }
 /*********************************/
