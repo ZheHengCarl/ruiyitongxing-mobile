@@ -990,6 +990,53 @@ div.bg-blue {
   width: 2.7rem;
   height: 1.8rem;
 }
+
+.layer-warn-max-files,
+.layer-warn-max-images,
+.layer-confirm-del {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2rem 0 0 -3.5rem;
+  width: 7rem;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: 0px 10px 20px 0px rgba(0, 173, 228, 0.15);
+  z-index: 999;
+}
+.layer-warn-max-files .i-close,
+.layer-warn-max-images .i-close,
+.layer-confirm-del .i-close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.layer-warn-max-files .layer-content,
+.layer-warn-max-images .layer-content,
+.layer-confirm-del .layer-content {
+  padding: 1.5rem 0 0.75rem;
+  text-align: center;
+  font-size: 0.48rem;
+  color: #fd7423;
+}
+.layer-warn-max-files .layer-btn-bar,
+.layer-warn-max-images .layer-btn-bar,
+.layer-confirm-del .layer-btn-bar {
+  text-align: center;
+}
+.layer-warn-max-files .layer-btn-bar input,
+.layer-warn-max-images .layer-btn-bar input,
+.layer-confirm-del .layer-btn-bar input {
+  width: 1.4rem;
+  margin: 0 0.2rem;
+}
+/*********************************/
+
+/****** conference-enter-calendar ******/
 .calendar {
   margin: 0.25rem 0.4rem 0;
 }
@@ -1124,47 +1171,125 @@ div.bg-blue {
   background: #fd7423;
 }
 
-.layer-warn-max-files,
-.layer-warn-max-images,
-.layer-confirm-del {
+.layer-conference-detail {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 0.4rem;
+  bottom: 0.4rem;
   left: 50%;
-  margin: -2rem 0 0 -3.5rem;
   width: 7rem;
-  height: 4rem;
-  border-radius: 10px;
-  background-color: #FFF;
+  margin-left: -3.5rem;
+  border: 1px solid transparent;
+  background: #FFF;
   box-shadow: 0px 10px 20px 0px rgba(0, 173, 228, 0.15);
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
   z-index: 999;
+  font-size: 0.24rem;
 }
-.layer-warn-max-files .i-close,
-.layer-warn-max-images .i-close,
-.layer-confirm-del .i-close {
+.layer-conference-detail .layer-content {
+  overflow: auto;
   position: absolute;
   top: 0.2rem;
+  left: 0.2rem;
+  bottom: 1rem;
   right: 0.2rem;
-  width: 0.5rem;
-  height: 0.5rem;
 }
-.layer-warn-max-files .layer-content,
-.layer-warn-max-images .layer-content,
-.layer-confirm-del .layer-content {
-  padding: 1.5rem 0 0.75rem;
-  text-align: center;
-  font-size: 0.48rem;
-  color: #fd7423;
+.layer-conference-detail .conference-btn-bar {
+  display: flex;
+  position: absolute;
+  height: 0.8rem;
+  bottom: 0;
+  left: 0.4rem;
+  right: 0.4rem;
+  justify-content: space-between;
+  align-items: center;
 }
-.layer-warn-max-files .layer-btn-bar,
-.layer-warn-max-images .layer-btn-bar,
-.layer-confirm-del .layer-btn-bar {
+.layer-conference-detail .conference-btn-bar {
   text-align: center;
 }
-.layer-warn-max-files .layer-btn-bar input,
-.layer-warn-max-images .layer-btn-bar input,
-.layer-confirm-del .layer-btn-bar input {
+.layer-conference-detail .conference-btn-bar .btn-enter-confer{
   width: 1.4rem;
-  margin: 0 0.2rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  line-height: 0.5rem;
+  font-size: 24px;
+  color: #FFF;
+}
+.layer-conference-detail .conference-btn-bar .i-arw{
+  width: 0.8rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 48px;
+  color: #006ab4;
+}
+.conference-picture {
+  margin-top: 0.95rem;
+}
+.conference-picture img {
+  display: block;
+  width: 6.4rem;
+  margin: 0 auto;
+}
+.conference-detail-info,
+.conference-detail-room {
+  padding: 0.25rem 0.4rem 0.15rem 0.4rem;
+}
+.conference-detail-info .detail-title,
+.conference-detail-room .detail-title{
+  color: #006ab4;
+}
+.conference-detail-info .info-content,
+.conference-detail-room .info-content {
+  color: #1893e7;
+}
+.conference-detail-info .item-info {
+  margin-top: 0.25rem;
+  padding-left: 0.1rem;
+  border-left: 0.04rem solid #919191;
+}
+.room-list {
+}
+.room-list .room-name {
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #919191;
+  padding-left: 0.14rem;
+  color: #006ab4;
+}
+.room-list .form-field {
+  margin-bottom: 0.4rem;
+  padding-left: 0.14rem;
+}
+.room-list .field-name.justify {
+  width: 1rem;
+}
+.room-list .field-name {
+  overflow: hidden;
+  display: inline-block;
+  height: 0.28rem;
+  margin-right: 0.1rem;
+  line-height: 0.28rem;
+  color: #1893e7;
+  vertical-align: middle;
+}
+.room-list .field-text {
+  color: #808080;
+}
+.room-list em {
+  vertical-align: middle;
+}
+.room-list .field-text {
+  vertical-align: middle;
 }
 /*********************************/
+
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@
     <script src="../../js/size.js"></script>
 </head>
 <body>
-  <div id="wrapper" class="conference-enter">
+  <div id="wrapper" class="conference-enter-calendar">
     <header id="header">
       <a href="index.html" class="link-return"><i></i>返回首页</a>
       <ul class="nav">
@@ -54,7 +54,7 @@
                 <span class="year">2018年</span>
                 <span class="month">5月</span>
               </div>
-              <div class="i-arw btn-prev-mon"><i class="fa fa-angle-right"></i></div>
+              <div class="i-arw btn-next-mon"><i class="fa fa-angle-right"></i></div>
             </div>
             <div class="calendar-body">
               <ul class="weeks">
@@ -90,8 +90,86 @@
       </div>
     </footer>
   </div>
+  <div class="layer-conference-detail">
+    <div class="layer-content">
+      <!-- <input type="button" name="" value="关 闭" class="btn-gray btn-close-layer"> -->
+      <div class="conference-picture">
+        <img src="../../img/temp-1.jpg" alt="">
+      </div>
+      <div class="conference-detail-info">
+        <div class="detail-title">会议详情</div>
+        <ul>
+          <li class="item-info">
+            <div class="info-title">会议主题</div>
+            <div class="info-content">罗氏肿瘤名医公开课罗氏肿瘤名医公开课罗瘤氏肿瘤名医公开课</div>
+          </li>
+          <li class="item-info">
+            <div class="info-title">会议日期</div>
+            <div class="info-content">2017.7.26</div>
+          </li>
+          <li class="item-info">
+            <div class="info-title">会议时间</div>
+            <div class="info-content">16:00-17:30</div>
+          </li>
+        </ul>
+      </div>
+      <div class="conference-detail-room">
+        <ul class="room-list">
+          <li>
+            <div class="room-name">主会场</div>
+            <div class="form-field">
+              <span class="field-name justify">会议地点</span><em>：</em><span class="field-text">大中华主会场</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name justify">讲者</span><em>：</em><span class="field-text">邱健 第四军医大学附属西京医院</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name justify">讲者简历</span><em>：</em><span class="field-text">李莉莉简历</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name">审批号有效期</span><em>：</em><span class="field-text">2019.10.21</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name">主会场负责人</span><em>：</em><span class="field-text">徐小龙</span>
+            </div>
+          </li>
+          <li>
+            <div class="room-name">分会场</div>
+            <div class="form-field">
+              <span class="field-name justify">会议地点</span><em>：</em><span class="field-text">大中华主会场</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name justify">讲者</span><em>：</em><span class="field-text">邱健 第四军医大学附属西京医院</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name justify">讲者简历</span><em>：</em><span class="field-text">李莉莉简历</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name">审批号有效期</span><em>：</em><span class="field-text">2019.10.21</span>
+            </div>
+            <div class="form-field">
+              <span class="field-name">主会场负责人</span><em>：</em><span class="field-text">徐小龙</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="conference-btn-bar">
+      <button type="button" class="i-arw btn-prev-conf"><i class="fa fa-angle-left"></i></button>
+      <div><input type="button" class="btn-enter-confer" value="一键入会"></div>
+      <button type="button" class="i-arw btn-next-conf"><i class="fa fa-angle-right"></i></button>
+    </div>
+  </div>
   <script src="../../js/jquery-2.1.3.min.js"></script>
   <script src="../../js/com.js"></script>
   <script src="../../js/page.js"></script>
+  <script>
+    // 初始化该页面所有弹出层
+    layer.add('conferenceDetail', 'layer-conference-detail', 'layer-cover-white')
+
+    $('.calendar-body .days i').bind('click', function () {
+      layer.show('conferenceDetail')
+    })
+  </script>
 </body>
 </html>
