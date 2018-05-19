@@ -92,7 +92,7 @@
   </div>
   <div class="layer-conference-detail">
     <div class="layer-content">
-      <!-- <input type="button" name="" value="关 闭" class="btn-gray btn-close-layer"> -->
+      <input type="button" name="" value="关 闭" class="btn-gray btn-close-layer">
       <div class="conference-picture">
         <img src="../../img/temp-1.jpg" alt="">
       </div>
@@ -124,7 +124,7 @@
               <span class="field-name justify">讲者</span><em>：</em><span class="field-text">邱健 第四军医大学附属西京医院</span>
             </div>
             <div class="form-field">
-              <span class="field-name justify">讲者简历</span><em>：</em><span class="field-text">李莉莉简历</span>
+              <span class="field-name justify">讲者简历</span><em>：</em><a href="#" class="field-text">李莉莉简历</a>
             </div>
             <div class="form-field">
               <span class="field-name">审批号有效期</span><em>：</em><span class="field-text">2019.10.21</span>
@@ -142,7 +142,7 @@
               <span class="field-name justify">讲者</span><em>：</em><span class="field-text">邱健 第四军医大学附属西京医院</span>
             </div>
             <div class="form-field">
-              <span class="field-name justify">讲者简历</span><em>：</em><span class="field-text">李莉莉简历</span>
+              <span class="field-name justify">讲者简历</span><em>：</em><a href="#" class="field-text">李莉莉简历</a>
             </div>
             <div class="form-field">
               <span class="field-name">审批号有效期</span><em>：</em><span class="field-text">2019.10.21</span>
@@ -156,7 +156,7 @@
     </div>
     <div class="conference-btn-bar">
       <button type="button" class="i-arw btn-prev-conf"><i class="fa fa-angle-left"></i></button>
-      <div><input type="button" class="btn-enter-confer" value="一键入会"></div>
+      <div class="btn-bar"><button type="button" class="btn-enter-confer">一键入会</button><button type="button" class="btn-edit-confer"><i class="fa fa-pencil"></i>修改</button><button type="button" class="btn-del-confer"><i class="fa fa-close"></i>删除</button></div>
       <button type="button" class="i-arw btn-next-conf"><i class="fa fa-angle-right"></i></button>
     </div>
   </div>
@@ -170,6 +170,11 @@
     $('.calendar-body .days i').bind('click', function () {
       layer.show('conferenceDetail')
     })
+
+    $('.layer-conference-detail .btn-close-layer').bind('click', function () {
+      layer.hide('conferenceDetail')
+    })
+
   </script>
 </body>
 </html>
