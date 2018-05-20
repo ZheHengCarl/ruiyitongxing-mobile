@@ -125,8 +125,81 @@
       </div>
     </footer>
   </div>
+  <div class="layer-warn-max-files">
+    <i class="btn-close i-close"></i>
+    <div class="layer-content">签到表最多上传2个！</div>
+    <div class="layer-btn-bar">
+      <input type="button" class="btn-gray btn-close-layer" value="关 闭">
+    </div>
+  </div>
+  <div class="layer-warn-max-images">
+    <i class="btn-close i-close"></i>
+    <div class="layer-content">会议照片最多上传6张！</div>
+    <div class="layer-btn-bar">
+      <input type="button" class="btn-gray btn-close-layer" value="关 闭">
+    </div>
+  </div>
+  <div class="layer-confirm-del">
+    <i class="btn-close i-close"></i>
+    <div class="layer-content">确认删除附件？</div>
+    <div class="layer-btn-bar">
+      <input type="button" class="btn-primary btn-confirm" value="确 认">
+      <input type="button" class="btn-gray btn-close-layer" value="取 消">
+    </div>
+  </div>
+  <div class="layer-res-status layer-res-uploaded">
+    <i class="i-close"></i>
+    <div class="btn-bar"><span class="btn-close">确认</span></div>
+  </div>
+  <div class="layer-res-status layer-res-wrong-type">
+    <i class="i-close"></i>
+    <div class="btn-bar"><span class="btn-close">确认</span></div>
+  </div>
   <script src="../../js/jquery-2.1.3.min.js"></script>
   <script src="../../js/com.js"></script>
   <script src="../../js/page.js"></script>
+  <script>
+    // 初始化该页面所有弹出层
+    layer.add('warnMaxFiles', 'layer-warn-max-files', 'layer-cover-white')
+    layer.add('warnMaxImages', 'layer-warn-max-images', 'layer-cover-white')
+    layer.add('warnConfirmDel', 'layer-confirm-del', 'layer-cover-white')
+    layer.add('resUploaded', 'layer-res-uploaded', 'layer-cover-white')
+    layer.add('resWrongType', 'layer-res-wrong-type', 'layer-cover-white')
+
+    // 文件删除按钮confirm层
+    $('.btn-del-file').bind('click', function () { layer.show('warnConfirmDel') })
+
+    var example = function () {
+      // 最大表单上传
+      layer.show('warnMaxFiles')
+
+      // 最大图片上传
+      layer.show('warnMaxImages')
+
+      // 上传成功
+      layer.show('resUploaded')
+
+      // 文件类型错误
+      layer.show('resWrongType')
+    }
+    example()
+
+    // 关闭弹出层
+    $('.layer-warn-max-files .btn-close, .layer-warn-max-files .btn-close-layer').bind('click', function () {
+      layer.hide('warnMaxFiles')
+    })
+    $('.layer-warn-max-images .btn-close, .layer-warn-max-images .btn-close-layer').bind('click', function () {
+      layer.hide('warnMaxImages')
+    })
+    $('.layer-confirm-del .btn-close, .layer-confirm-del .btn-close-layer').bind('click', function () {
+      layer.hide('warnConfirmDel')
+    })
+    $('.layer-res-uploaded .i-close').bind('click', function () {
+      layer.hide('resUploaded')
+    })
+    $('.layer-res-wrong-type .i-close').bind('click', function () {
+      layer.hide('resWrongType')
+    })
+  </script>
 </body>
 </html>

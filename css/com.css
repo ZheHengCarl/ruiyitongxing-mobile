@@ -38,6 +38,7 @@ body {
   display: flex;
   display: -webkit-flex;
   align-items: center;
+  justify-content: space-between;
 }
 /******  form  ******/
 .form-normal .form-field {
@@ -259,6 +260,12 @@ body {
 }
 .layer-res-edit-success {
   background-image: url('../img/res-edit-suc.png');
+}
+.layer-res-uploaded {
+  background-image: url('../img/res-uploaded.png');
+}
+.layer-res-wrong-type {
+  background-image: url('../img/res-wrong-type.png');
 }
 /********************/
 
@@ -507,7 +514,7 @@ input:checked + .ipt-checkbox {
   position: absolute;
   top: 1.2rem;
   right: 0.1rem;
-  width: 3.6rem;
+  width: 360px;
   background-color: #FFF;
   border-radius: 10px;
   z-index: 999;
