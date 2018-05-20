@@ -441,7 +441,6 @@ input:checked + .ipt-checkbox {
   height: 0.32rem;
   margin: 0.3rem 0.36rem 0.17rem;
   background: url('../img/icon/icon-back-index.png') no-repeat center bottom;
-  background-size: ;
 }
 #header .link-my-message {
   position: relative;
@@ -493,7 +492,7 @@ input:checked + .ipt-checkbox {
 #header .nav span {
   display: block;
   font-size: 0.24rem;
-  color: #ffc14a;
+  color: #fd7423;
 }
 .i-btn-side-nav {
   display: block;
