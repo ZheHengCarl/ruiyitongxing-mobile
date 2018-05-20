@@ -271,6 +271,9 @@ body {
 .layer-res-wrong-type {
   background-image: url('../img/res-wrong-type.png');
 }
+.layer-res-sub-denied {
+  background-image: url('../img/res-sub-denied.png');
+}
 /********************/
 
 /******  icon-font  ******/
