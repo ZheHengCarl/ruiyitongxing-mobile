@@ -156,6 +156,38 @@ body {
   color: #000;
   font-size: 32px;
 }
+.multi-select {
+  display: none;
+  overflow: auto;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  width: 4.1rem;
+  height: 4.5rem;
+  background-color: #FFF;
+  border-radius: 0.2rem;
+  box-shadow: 0px 10px 20px 0px rgba(28, 174, 226, 0.15);
+  z-index: 999;
+}
+.multi-select .option {
+  display: block;
+  padding: 0.2rem 0 0.2rem 0.3rem;
+  background-color: #FFF;
+  color: #b8c1ce;
+}
+.multi-select .option i {
+  display: inline-block;
+  margin-right: 0.2rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px solid #b8c1ce;
+  vertical-align: middle;
+}
+.multi-select .option span{
+  display: inline-block;
+  width: 3rem;
+  vertical-align: middle;
+}
 
 .btn-primary,
 .btn-gray {
@@ -170,10 +202,17 @@ body {
   color: #FFF;
   vertical-align: top;
 }
-#wrapper .btn-gray {
+body .btn-gray {
   background-color: #b8c1ce;
 }
-
+.btn-close-layer {
+  width: 1rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.24rem;
+}
 
 .btn-bar {
   text-align: center;

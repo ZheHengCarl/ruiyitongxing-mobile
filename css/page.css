@@ -491,6 +491,9 @@
 .conference-btn-bar i {
   margin-right: 0.1rem;
 }
+.conference-list li.disabled {
+  border: none;
+}
 .conference-list li.disabled .conference-btn-bar a{
   background-color: #b6bfce;
 }
@@ -755,7 +758,7 @@
   height: 0.4rem;
 }
 .conference-report .form-report .field-name {
-  width: 0.8rem;
+  width: 1.1rem;
   line-height: 0.44rem;
   color: #1277be;
 }
@@ -1465,18 +1468,18 @@ div.bg-blue {
 }
 .new-conference .new-conference-btn .submit{
   background-color: #1277be;
-	box-shadow: 0rem 0.1rem 0.2rem 0rem 
-		rgba(0, 173, 228, 0.15);
+  box-shadow: 0rem 0.1rem 0.2rem 0rem
+    rgba(0, 173, 228, 0.15);
 }
 .new-conference .new-conference-btn .save{
-	background-color: #4596d5;
-	box-shadow: 0rem 0.1rem 0.2rem 0rem 
-		rgba(0, 173, 228, 0.15);
+  background-color: #4596d5;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem
+    rgba(0, 173, 228, 0.15);
 }
 .new-conference .new-conference-btn .cancel{
-	background-color: #45cbe4;
-	box-shadow: 0rem 0.1rem 0.2rem 0rem 
-		rgba(0, 173, 228, 0.15);
+  background-color: #45cbe4;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem
+    rgba(0, 173, 228, 0.15);
 }
 .new-conference .form-report .field-name{
   min-width: 1.3rem;
@@ -1578,9 +1581,9 @@ div.bg-blue {
   width: 1rem;
   height: 0.4rem;
   margin: 0 auto;
-	background-color: #45cbe4;
-	box-shadow: 0rem 0.1rem 0.2rem 0rem 
-		rgba(0, 173, 228, 0.15);
+  background-color: #45cbe4;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem
+    rgba(0, 173, 228, 0.15);
   border-radius: 0.2rem;
   color: #FFF;
   line-height: .4rem;
@@ -1763,10 +1766,10 @@ div.bg-blue {
   font-size: 24px;
 }
 
-.layer-details-status{
+.layer-conference-report-detail {
   display: none;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   width: 6.6rem;
   height: 6.8rem;
@@ -1774,20 +1777,19 @@ div.bg-blue {
   border-radius: 20px;
   box-sizing: border-box;
   background-size: contain;
-  background-color: #1277be;
+  background-color: #FFF;
   z-index: 999;
-
 }
-
-.layer-res-details-type{
-  background: white;
-  border: 0.02rem solid #e3f6fc;
-  text-align: center;
-  position: relative;
-  text-align: left;
+.layer-conference-report-detail.without-form {
+  height: 4.8rem;
+  margin-top: -2.4rem;
 }
-
-.form-details>a{
+.layer-conference-report-detail .btn-close-layer {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+.form-details > a{
   position: absolute;
   top: 0.2rem;
   right: 0.2rem;
@@ -1803,11 +1805,11 @@ div.bg-blue {
   font-size: 24px;
 }
 
-.layer-res-details-type .form-details{
+.layer-conference-report-detail .form-details{
   margin-top: 1rem;
 }
 
-.layer-res-details-type .form-details .form-field{
+.layer-conference-report-detail .form-details .form-field{
   display: flex;
   display: -webkit-flex;
   font-size: .25rem;
@@ -1835,7 +1837,7 @@ div.bg-blue {
 }
 
 .form-details-img{
-  margin: 0.5rem auto;
+  margin: 0.8rem auto 0.2rem;
 }
 
 .form-details-img  img,.form-details-img img{
@@ -1843,21 +1845,20 @@ div.bg-blue {
   height: 2.6rem;
   margin: 0 0.3rem;
 }
-.layer-res-details-type .form-btn a{
-    display: inline-block;
-    width: 2.5rem;
-    height: 0.5rem;
-    margin: 0 0.3rem;
-    border-radius: 0.25rem;
-    text-align: center;
-    line-height: 0.5rem;
-    color: #FFF;
-    font-size: 24px;
+.layer-conference-report-detail .form-btn a{
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.5rem;
+  margin: 0 0.3rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #FFF;
+  font-size: 24px;
 }
- .btn-single-confer{
+.btn-single-confer{
   background-color: #4596d5;
 }
-
 .btn-upload-confer{
   background-color: #fd7423;
 }

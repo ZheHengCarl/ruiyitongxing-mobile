@@ -51,12 +51,58 @@
             <div class="form-field">
               <i></i>
               <label class="field-name">品牌:</label>
-              <div class="select-bar">
-                <div class="select-value">品牌1</div>
-                <select>
-                  <option value="1">品牌1</option>
-                  <option value="2">品牌2</option>
-                </select>
+              <div class="multi-select-bar select-bar">
+                <div class="select-value">请选择</div>
+                <div class="multi-select">
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌1</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌2</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌3</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌4</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌5</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌6</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌7</span></label>
+                  <label class="option"><input type="checkbox"><i class="ipt-checkbox"></i><span>品牌8</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <i></i>
+              <label class="field-name">大区:</label>
+              <div class="form-field-rt">
+                <!-- 有read-only类则当前行字段为只读状态不能编辑  -->
+                <div class="select-bar">
+                  <div class="select-value">华东</div>
+                  <select>
+                    <option value="1">华东</option>
+                    <option value="2">华南</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <i></i>
+              <label class="field-name">地区:</label>
+              <div class="form-field-rt">
+                <div class="select-bar">
+                  <div class="select-value">上海</div>
+                  <select>
+                    <option value="1">上海</option>
+                    <option value="2">广州</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <i></i>
+              <label class="field-name">代表:</label>
+              <div class="form-field-rt">
+                <div class="select-bar">
+                  <div class="select-value">李莉莉</div>
+                  <select>
+                    <option value="1">李莉莉</option>
+                    <option value="2">黎丽丽</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="form-field">
@@ -75,40 +121,12 @@
             </div>
             <div class="form-field">
               <i></i>
-              <label class="field-name">大区:</label>
+              <label class="field-name">类型:</label>
               <div class="form-field-rt">
-                <!-- 有read-only类则当前行字段为只读状态不能编辑  -->
-                <div class="select-bar read-only">
-                  <div class="select-value">华东</div>
+                <div class="select-bar">
+                  <div class="select-value">网络一路行</div>
                   <select>
-                    <option value="1">华东</option>
-                    <option value="2">华南</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="form-field">
-              <i></i>
-              <label class="field-name">地区:</label>
-              <div class="form-field-rt">
-                <div class="select-bar read-only">
-                  <div class="select-value">上海</div>
-                  <select>
-                    <option value="1">上海</option>
-                    <option value="2">广州</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="form-field">
-              <i></i>
-              <label class="field-name">代表:</label>
-              <div class="form-field-rt">
-                <div class="select-bar read-only">
-                  <div class="select-value">李莉莉</div>
-                  <select>
-                    <option value="1">李莉莉</option>
-                    <option value="2">黎丽丽</option>
+                    <option value="1">网络一路行</option>】
                   </select>
                 </div>
               </div>
@@ -120,7 +138,7 @@
       </div>
     </div>
 
-    <div class="layer-details-status layer-res-details-type">
+    <div class="layer-conference-report-detail">
       <div class="form-details">
         <a href="javascript:void(0)" class="btn-del-confer"><i class="fa fa-close"></i> 关闭</a>
         <div class="form-field">
@@ -195,15 +213,15 @@
     $chart.init(tempConfig)
 
     // 初始化该页面所有弹出层
-    layer.add('fieldDetails', 'layer-res-details-type', 'layer-cover-white')
+    layer.add('reportDetails', 'layer-conference-report-detail', 'layer-cover-white')
 
     $('.main-title a').bind('click',function(){
-       layer.show('fieldDetails')
+       layer.show('reportDetails')
     });
 
     // 关闭弹出层
-    $('.layer-details-status .form-details .btn-del-confer').bind('click', function () {
-      layer.hide('fieldDetails')
+    $('.layer-conference-report-detail .form-details .btn-del-confer').bind('click', function () {
+      layer.hide('reportDetails')
     })
 
 

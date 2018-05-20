@@ -158,12 +158,25 @@
       <button type="button" class="i-arw btn-next-conf"><i class="fa fa-angle-right"></i></button>
     </div>
   </div>
+
+  <div class="layer-conference-report-detail without-form">
+    <a href="javascript:void(0)" class="btn-gray btn-close-layer"><i class="fa fa-close"></i> 关闭</a>
+    <div class="form-details-img">
+      <img src="../../img/single_live_report.png" alt=""/>
+      <img src="../../img/upload_data_img.png" alt=""/>
+    </div>
+    <div class="form-btn">
+      <a href="javascript:void(0)" class="btn-single-confer">单次直播报告</a>
+      <a href="javascript:void(0)" class="btn-upload-confer">会后上传会议资料包</a>
+    </div>
+  </div>
   <script src="../../js/jquery-2.1.3.min.js"></script>
   <script src="../../js/com.js"></script>
   <script src="../../js/page.js"></script>
   <script>
     // 初始化该页面所有弹出层
     layer.add('conferenceDetail', 'layer-conference-detail', 'layer-cover-white')
+    layer.add('resDetailsType', 'layer-conference-report-detail', 'layer-cover-white')
 
     $('.calendar-body .days i').bind('click', function () {
       layer.show('conferenceDetail')
@@ -173,6 +186,13 @@
       layer.hide('conferenceDetail')
     })
 
+    $('.layer-conference-report-detail .btn-close-layer').bind('click', function () {
+      layer.hide('resDetailsType')
+    })
+    var example = function () {
+      layer.show('resDetailsType')
+    }
+    example()
   </script>
 </body>
 </html>
