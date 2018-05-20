@@ -12,7 +12,7 @@
     <script src="../../js/size.js"></script>
 </head>
 <body>
-  <div id="wrapper" class="conference-enter-calendar">
+  <div id="wrapper" class="conference-enter-weeks">
     <header id="header">
       <a href="index.html" class="link-return"><i></i>返回首页</a>
       <ul class="nav">
@@ -42,8 +42,8 @@
             <a href="conference-enter-calendar.html" class="cur"><i class="fa fa-calendar"></i><span>日历排列</span></a>
           </div>
           <div class="conference-status-switch">
-            <a href="conference-enter-calendar.html" class="cur">月历</a>
-            <a href="conference-enter-weeks.html">周历</a>
+            <a href="conference-enter-calendar.html">月历</a>
+            <a href="conference-enter-weeks.html" class="cur">周历</a>
           </div>
         </div>
         <div class="main-content">
@@ -56,16 +56,125 @@
               </div>
               <div class="i-arw btn-next-mon"><i class="fa fa-angle-right"></i></div>
             </div>
-            <div class="calendar-body">
+            <div class="calendar-body-times">
               <ul class="weeks">
-                <li>周一</li><li>周二</li><li>周三</li><li>周四</li><li>周五</li><li>周六</li><li>周日</li>
+                <li>周一<div>20</div></li><li>周二<div>21</div></li><li>周三<div>22</div></li><li>周四<div>23</div></li><li>周五<div>24</div></li><li>周六<div>25</div></li><li>周日<div>26</div></li>
               </ul>
-              <ul class="days">
-                <li class="off">29</li><li class="off">30</li><li>01</li><li>02<div class="yqd"><i></i>2</div><div class="ycj"><i></i>1</div><div class="kwg"><i></i>2</div></li><li>03</li><li>04</li><li>05</li>
-                <li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11<div class="yqd"><i></i>2</div><div class="kwg"><i></i>2</div></li><li>12</li>
-                <li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19<div class="yqd"><i></i>2</div></li>
-                <li>20</li><li>21<div class="kwg"><i></i>2</div></li><li>22</li><li>23</li><li>24<div class="yqd"><i></i>2</div><div class="ycj"><i></i>1</div></li><li>25</li><li>26</li>
-                <li>27<div class="ycj"><i></i>1</div><div class="kwg"><i></i>2</div></li><li>28</li><li>29</li><li>30</li><li>31</li><li class="off">1</li><li class="off">2</li>
+              <ul class="times">
+                <li class="y-axis"><div>06:00</div><div>08:00</div><div>10:00</div><div>12:00</div><div>14:00</div><div>16:00</div><div>18:00</div><div>20:00</div><div>22:00</div></li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="7" data-end="12" class="ycj">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="10" data-end="14" class="yqd">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="12" data-end="18" class="kwg">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="12" data-end="15" class="ycj">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="8" data-end="11" class="kwg">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="14" data-end="16" class="yqd">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                    <div data-start="20" data-end="23" class="kwg">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="grids">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                  </div>
+                  <div class="confer">
+                    <div data-start="10" data-end="15" class="yqd">
+                      <i></i>
+                      <div class="confer-btm">
+                        <div class="confer-cnt">1</div>
+                        <div class="confer-tip">查看详情</div>
+                        <b class="fa fa-angle-right"></b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="calendar-foot">
@@ -167,7 +276,7 @@
     // 初始化该页面所有弹出层
     layer.add('conferenceDetail', 'layer-conference-detail', 'layer-cover-white')
 
-    $('.calendar-body .days i').bind('click', function () {
+    $('.calendar-body-times .confer div').bind('click', function () {
       layer.show('conferenceDetail')
     })
 
@@ -175,6 +284,19 @@
       layer.hide('conferenceDetail')
     })
 
+    var renderConfer = function (confer) {
+      var start = confer.dataset.start, end = confer.dataset.end;
+      confer.style.top = ((start - 6) * 0.4 ) + 'rem'
+      confer.style.bottom = ((24 - end) * 0.4 ) + 'rem'
+      if (end-start < 3) {
+        confer.querySelector('.confer-btm').style.display = 'none'
+      }
+    }
+
+    var allConfers = document.querySelectorAll('.confer div')
+    for (var i = 0, len = allConfers.length; i < len; i++) {
+      renderConfer(allConfers.item(i))
+    }
   </script>
 </body>
 </html>

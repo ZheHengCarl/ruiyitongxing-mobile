@@ -1305,6 +1305,89 @@ div.bg-blue {
 }
 /*********************************/
 
+/*********************************/
+.calendar-body-times {
+  color: #78859a;
+}
+.calendar-body-times .weeks {
+  display: flex;
+  padding: 0.2rem 0 0.15rem 0.6rem;
+  border-bottom: 2px solid #45cbe4;
+  text-align: center;
+}
+.calendar-body-times .weeks div{
+  width: 0.8rem;
+  color: #45cbe4;
+}
+.calendar-body-times .times {
+  display: flex;
+}
+.calendar-body-times .times .y-axis {
+  flex: 1;
+}
+.calendar-body-times .times li{
+  position: relative;
+  width: 0.8rem;
+  border-right: 1px solid #e0f0ff;
+}
+
+.calendar-body-times .times .y-axis div,
+.calendar-body-times .times .grids div {
+  box-sizing: border-box;
+  height: 0.8rem;
+  padding-top: 5px;
+  border-bottom: 1px solid #e0f0ff;
+}
+.calendar-body-times .times .confer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0.8rem;
+}
+.calendar-body-times .times .confer .ycj,
+.calendar-body-times .times .confer .yqd,
+.calendar-body-times .times .confer .kwg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-top: 0.08rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.calendar-body-times .times .confer > div > i {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  /* background: #; */
+}
+
+.calendar-body-times .times .confer .confer-btm {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  line-height: 1;
+}
+.calendar-body-times .times .confer .confer-btm .confer-cnt {
+  width: 100%;
+  margin-bottom: 0.05rem;
+  font-size: 0.3rem;
+  text-align: center;
+}
+.calendar-body-times .times .confer .confer-btm .fa-angle-right {
+  font-size: 24px;
+}
+/*********************************/
+
+
+
+
+
 
 
 
