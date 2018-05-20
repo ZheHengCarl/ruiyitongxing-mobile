@@ -1593,8 +1593,116 @@ div.bg-blue {
 }
 
 /*********************************/
+.main-title a{
+  display: inline-block;
+  width: 1.35rem;
+  height: 0.5rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #FFF;
+  font-size: 24px;
+}
 
+.layer-details-status{
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 6.6rem;
+  height: 6.8rem;
+  margin: -3.4rem 0 0 -3.3rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-color: #1277be;
+  z-index: 999;
 
+}
+
+.layer-res-details-type{
+  background: white;
+  border: 0.02rem solid #e3f6fc;
+  text-align: center;
+  position: relative;
+  text-align: left;
+}
+
+.form-details>a{
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  background-color: #b6bfce;
+  display: inline-block;
+  width: 1.35rem;
+  height: 0.5rem;
+  margin: 0 0.1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #FFF;
+  font-size: 24px;
+}
+
+.layer-res-details-type .form-details{
+  margin-top: 1rem;
+}
+
+.layer-res-details-type .form-details .form-field{
+  display: flex;
+  display: -webkit-flex;
+  font-size: .25rem;
+  margin: 0 auto;
+}
+
+.form-details .form-field .field-name{
+  width: 1.6rem;
+  line-height: 0.44rem;
+  color: #1277be;
+}
+
+.form-details .select-bar,.form-details .ipt-date-time{
+  position: relative;
+  display: block;
+  height: 0.44rem;
+  border: 2px solid #1277be;
+  border-radius: 0.22rem;
+  line-height: 0.44rem;
+}
+
+.form-details .select-bar .select-value,.form-details .ipt-date-time .date-time-val{
+  padding-right: 0.2rem;
+  color: #78859a;
+}
+
+.form-details-img{
+  margin: 0.5rem auto;
+}
+
+.form-details-img  img,.form-details-img img{
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0 0.3rem;
+}
+.layer-res-details-type .form-btn a{
+    display: inline-block;
+    width: 2.5rem;
+    height: 0.5rem;
+    margin: 0 0.3rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    line-height: 0.5rem;
+    color: #FFF;
+    font-size: 24px;
+}
+ .btn-single-confer{
+  background-color: #4596d5;
+}
+
+.btn-upload-confer{
+  background-color: #fd7423;
+}
 
 
 

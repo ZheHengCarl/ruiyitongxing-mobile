@@ -40,6 +40,10 @@
         <div class="main-top">
           <div class="main-title">
             <i></i><span>报告总览</span>
+            <a href="javascript:void(0);" class="btn-del-confer">
+              场次详情
+              <i class="fa fa-angle-right"></i>
+            </a>
           </div>
         </div>
         <div class="main-content">
@@ -115,6 +119,42 @@
         </div>
       </div>
     </div>
+
+    <div class="layer-details-status layer-res-details-type">
+      <div class="form-details">
+        <a href="javascript:void(0)" class="btn-del-confer"><i class="fa fa-close"></i> 关闭</a>
+        <div class="form-field">
+          <label class="field-name">会议时间</label>
+          <div class="form-field-rt">
+            <label class="ipt-date-time">
+              <div class="date-time-val"></div>
+              <input type="date" name="">
+            </label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="field-name">会议主题</label>
+          <div class="form-field-rt">
+              <div class="select-bar">
+              <div class="select-value">东区</div>
+              <select>
+                  <option value="1">东区</option>
+                  <option value="2">西区</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-details-img">
+        <img src="../../img/single_live_report.png" alt=""/>
+        <img src="../../img/upload_data_img.png" alt=""/>
+      </div>
+      <div class="form-btn">
+        <a href="javascript:void(0)" class="btn-single-confer">单次直播报告</a>
+        <a href="javascript:void(0)" class="btn-upload-confer">会后上传会议资料包</a>
+      </div>
+    </div>
+
     <footer id="footer" class="brand-footer">
       <div class="btm-nav">
         <a href="create-conference.html"><i class="i-bar2-1"></i>创建会议</a>
@@ -153,6 +193,20 @@
     }
     var $chart = Chart(tempConfig)
     $chart.init(tempConfig)
+
+    // 初始化该页面所有弹出层
+    layer.add('fieldDetails', 'layer-res-details-type', 'layer-cover-white')
+
+    $('.main-title a').bind('click',function(){
+       layer.show('fieldDetails')
+    });
+
+    // 关闭弹出层
+    $('.layer-details-status .form-details .btn-del-confer').bind('click', function () {
+      layer.hide('fieldDetails')
+    })
+
+
   </script>
 </body>
 </html>
