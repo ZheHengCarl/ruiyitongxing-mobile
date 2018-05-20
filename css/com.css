@@ -40,6 +40,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.main-top.has-search-bar .conference-list-nav {
+  width: 1.9rem;
+  margin: 0 10px;
+}
 /******  form  ******/
 .form-normal .form-field {
   display: flex;
@@ -166,7 +170,7 @@ body {
   color: #FFF;
   vertical-align: top;
 }
-.btn-gray {
+#wrapper .btn-gray {
   background-color: #b8c1ce;
 }
 
