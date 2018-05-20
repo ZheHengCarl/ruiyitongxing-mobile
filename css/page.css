@@ -1383,6 +1383,67 @@ div.bg-blue {
   font-size: 24px;
 }
 /*********************************/
+/* carl */
+.brand .index-menu i{
+  background: url('../img/icon/icon-index2.png') no-repeat 0 0;
+}
+.brand .index-menu .i-index-menu-2{
+  background-position: 0 -0.54rem;
+  background-size: 100% auto;
+}
+.brand .content-foot a i.i-grab-order{
+    width: 0.55rem;
+    height: 0.58rem;
+    background: url('../img/icon/icon-nav4.png') no-repeat 0 0;
+    background-size: contain;
+}
+.brand .content-foot a i.i-attend{
+    width: 0.55rem;
+    height: 0.58rem;
+    background: url('../img/icon/icon-nav3.png') no-repeat 0 0;
+    background-size: contain;
+}
+.brand .virtual-scene{
+  background: url('../img/virtual-scene2.png');
+}
+.brand .create-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+.brand .create-content li {
+  margin: .3rem 0;
+}
+.brand .create-content a{
+    display: block;
+    width: 3rem;
+    height: 2.3rem;
+    padding: .1rem;
+    background-color: #ffffff;
+    box-shadow: 0rem 0rem 0.2rem 0rem 
+      rgba(0, 173, 228, 0.33);
+    border-radius: 0.1rem;
+    text-align: center;
+}
+.brand .create-content a img {
+	width: 2.8rem;
+	height: 1.8rem;
+	border-radius: 0.1rem;
+}
+.brand .create-content a button {
+  display: block;
+	width: 1.2rem;
+  height: 0.3rem;
+  margin: 0.1rem auto 0;
+	background-color: #1277be;
+	box-shadow: 0rem 0.1rem 0.2rem 0rem 
+		rgba(0, 173, 228, 0.15);
+  border-radius: 0.2rem;
+  color: #FFF;
+}
+/* carl end */
 
 /*********************************/
 
