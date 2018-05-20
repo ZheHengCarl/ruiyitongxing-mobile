@@ -1422,24 +1422,24 @@ div.bg-blue {
     height: 2.3rem;
     padding: .1rem;
     background-color: #ffffff;
-    box-shadow: 0rem 0rem 0.2rem 0rem 
+    box-shadow: 0rem 0rem 0.2rem 0rem
       rgba(0, 173, 228, 0.33);
     border-radius: 0.1rem;
     text-align: center;
 }
 .brand .create-content a img {
-	width: 2.8rem;
-	height: 1.8rem;
-	border-radius: 0.1rem;
+  width: 2.8rem;
+  height: 1.8rem;
+  border-radius: 0.1rem;
 }
 .brand .create-content a button {
   display: block;
-	width: 1.2rem;
+  width: 1.2rem;
   height: 0.3rem;
   margin: 0.1rem auto 0;
-	background-color: #1277be;
-	box-shadow: 0rem 0.1rem 0.2rem 0rem 
-		rgba(0, 173, 228, 0.15);
+  background-color: #1277be;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem
+    rgba(0, 173, 228, 0.15);
   border-radius: 0.2rem;
   color: #FFF;
   font-size: .16rem;
@@ -1734,8 +1734,23 @@ div.bg-blue {
 }
 /*********************************/
 
+/******* conference-mine-list ****/
 
+.conference-mine-list .conference-status.is-confirmed {
+  background-color: #1277be;
+}
+.btm-btn-bar, .btm-tip {
+  padding: 0.1rem 0.3rem 0.1rem;
+  text-align: right;
+  color: #1277be;
+  font-size: 24px;
+}
+.btm-btn-bar a, .btm-tip a {
+  border-bottom: 1px solid #1277be;
+  color: #1277be;
+}
 
+/*********************************/
 
 
 
