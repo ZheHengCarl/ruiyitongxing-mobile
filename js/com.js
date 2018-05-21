@@ -138,17 +138,17 @@ document.body.addEventListener('scroll', function () {
 
 window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || setTimeout(function () {}, 60)
 
-var startY = 0
+var startY = 0,
+scrollView = $('.scroll-view'),
+clientHeight = scrollView.height(),
+scrollHeight = scrollView.prop('scrollHeight');
 
-$('.main-content').bind('touchstart', function (e) {
+scrollView.bind('touchstart', function (e) {
   var ev = e.originalEvent.changedTouches[0]
   startY = ev.clientY
 })
 
-var clientHeight = $('.main-content').height(),
-scrollHeight = $('.main-content').prop('scrollHeight');
-
-$('.main-content').bind('touchmove', function (e) {
+scrollView.bind('touchmove', function (e) {
   var ev = e.originalEvent.changedTouches[0], $this = $(this)
   if ($this.scrollTop() <= 0 && ev.clientY - startY > 0) {
     e.preventDefault()
