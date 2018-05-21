@@ -40,6 +40,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.main-content {
+  overflow: auto;
+  position: absolute;
+  top: 0.98rem;
+  bottom: 0.2rem;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
 .main-top.has-search-bar .conference-list-nav {
   width: 1.9rem;
   margin: 0 10px;

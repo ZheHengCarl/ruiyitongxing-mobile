@@ -380,14 +380,6 @@
 /*********** conference-list ********/
 .conference-grab .content{
 }
-.main-content {
-  overflow: auto;
-  position: absolute;
-  top: 0.98rem;
-  bottom: 0.2rem;
-  width: 100%;
-  box-sizing: border-box;
-}
 .conference-list-nav {
   height: 0.78rem;
   margin: 0 0.2rem;
