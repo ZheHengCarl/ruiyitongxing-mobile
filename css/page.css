@@ -597,7 +597,12 @@
 
 /*********************************/
 .user-activation-content {
-  height: 11rem;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .item-active-value {
   position: absolute;
@@ -629,11 +634,8 @@
   background-size: contain;
 }
 .user-activation-data {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
   width: 100%;
+  height: 11rem;
   background: url('../img/user-activation-3.png') no-repeat left bottom;
   background-size: 100% auto;
 }
