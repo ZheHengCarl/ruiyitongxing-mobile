@@ -131,3 +131,33 @@ var Chart = function (config) {
     init: init
   }
 }
+
+document.body.addEventListener('scroll', function () {
+  console.log(document.documentElement.scrollTop)
+})
+
+window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || setTimeout(function () {}, 60)
+
+var startY = 0
+
+$('.main-content').bind('touchstart', function (e) {
+  var ev = e.originalEvent.changedTouches[0]
+  startY = ev.clientY
+})
+
+var clientHeight = $('.main-content').height(),
+scrollHeight = $('.main-content').prop('scrollHeight');
+
+$('.main-content').bind('touchmove', function (e) {
+  var ev = e.originalEvent.changedTouches[0], $this = $(this)
+  if ($this.scrollTop() <= 0 && ev.clientY - startY > 0) {
+    e.preventDefault()
+  } else if ($this.scrollTop() + clientHeight >= scrollHeight && ev.clientY - startY > 0) {
+    e.preventDefault()
+  }
+})
+
+
+
+
+
