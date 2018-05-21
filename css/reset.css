@@ -15,3 +15,4 @@ dl:after { display:block; content:""; clear:both;}
     src: url('../fonts/hyzyt.ttf');
     font-family: hyzyt;
 }
+button { border: none; background: transparent; }
