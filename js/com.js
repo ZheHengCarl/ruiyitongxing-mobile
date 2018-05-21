@@ -152,7 +152,7 @@ $('.main-content').bind('touchmove', function (e) {
   var ev = e.originalEvent.changedTouches[0], $this = $(this)
   if ($this.scrollTop() <= 0 && ev.clientY - startY > 0) {
     e.preventDefault()
-  } else if ($this.scrollTop() + clientHeight >= scrollHeight && ev.clientY - startY > 0) {
+  } else if ($this.scrollTop() + clientHeight >= scrollHeight && ev.clientY - startY < 0) {
     e.preventDefault()
   }
 })
