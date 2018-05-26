@@ -132,12 +132,6 @@ var Chart = function (config) {
   }
 }
 
-document.body.addEventListener('scroll', function () {
-  console.log(document.documentElement.scrollTop)
-})
-
-window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || setTimeout(function () {}, 60)
-
 var startY = 0,
 scrollView = $('.scroll-view'),
 clientHeight = scrollView.height(),
@@ -157,6 +151,7 @@ scrollView.bind('touchmove', function (e) {
   }
 })
 
+// 多选下拉 全选
 $('.all-option input').bind('change', function () {
   var $this = $(this), checked = $this.prop('checked')
   $this.parents('.multi-select').find('.option input').not($this).each(function () {
@@ -164,7 +159,27 @@ $('.all-option input').bind('change', function () {
   })
 })
 
+// 会议
+var ConferSwitch = function () {
+  var currentConfer = 0,
+  conferSwiper = $('.confer-detail-switch'),
+  conferPages = $('.confer-page');
 
+  var switchConfer = function () {
+    conferSwiper.css({ 'transform': 'translate(-'+ (currentConfer * 100) +'%, 0)' })
+  }
+
+  $('.btn-prev-conf').bind('click', function () {
+    currentConfer = --currentConfer > -1 ? currentConfer : 0;
+    switchConfer()
+  })
+
+  $('.btn-next-conf').bind('click', function () {
+    currentConfer = ++currentConfer < conferPages.length ? currentConfer : conferPages.length - 1;
+    switchConfer()
+  })
+}
+ConferSwitch()
 
 
 

@@ -1200,10 +1200,18 @@ div.bg-blue {
 .layer-conference-detail .layer-content {
   overflow: auto;
   position: absolute;
-  top: 0.2rem;
+  top: 0.95rem;
   left: 0.2rem;
   bottom: 1rem;
   right: 0.2rem;
+}
+.layer-conference-detail .confer-detail-switch {
+  display: flex;
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+}
+.layer-conference-detail .confer-detail-switch .confer-page{
+  flex: 0 0 100%;
 }
 .layer-conference-detail .conference-btn-bar {
   display: flex;
@@ -1247,7 +1255,6 @@ div.bg-blue {
   font-size: 24px;
 }
 .conference-picture {
-  margin-top: 0.95rem;
 }
 .conference-picture img {
   display: block;
