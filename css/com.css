@@ -442,16 +442,16 @@ input:checked + .ipt-checkbox {
 
 .index-menu i {
   background: url("../img/icon/icon-index1.png") no-repeat 0 0;
-  background: 100% auto;
+  background-size: 100% auto;
 }
 .index-menu i.i-index-menu-2 {
-  background-position: 0 -0.92rem;
+  background-position: 0 -0.9rem;
 }
 .index-menu i.i-index-menu-3 {
-  background-position: 0 -1.9rem;
+  background-position: 0 -1.85rem;
 }
 .index-menu i.i-index-menu-4 {
-  background-position: 0 -2.83rem;
+  background-position: 0 -2.75rem;
 }
 
 .side-nav .side-nav-head p i{

@@ -157,6 +157,13 @@ scrollView.bind('touchmove', function (e) {
   }
 })
 
+$('.all-option input').bind('change', function () {
+  var $this = $(this), checked = $this.prop('checked')
+  $this.parents('.multi-select').find('.option input').not($this).each(function () {
+    $(this).prop({ 'checked': checked })
+  })
+})
+
 
 
 
