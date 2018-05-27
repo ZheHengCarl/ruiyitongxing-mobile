@@ -21,7 +21,7 @@ var LayerManager = function () {
     wrap && (layers[name].wrap = $('.' + wrap))
   }
 
-  var show = function (name) {
+  var show = function (name, cb) {
     opened = name
     layers[name].container.fadeIn()
     layers[name].cover.fadeIn()
@@ -31,7 +31,7 @@ var LayerManager = function () {
     }
   }
 
-  var hide = function (name) {
+  var hide = function (name, cb) {
     layers[name].container.fadeOut()
     layers[name].cover.fadeOut(function () {
       if (layers[name].wrap) {
@@ -39,6 +39,7 @@ var LayerManager = function () {
         layers[name].wrap.removeClass('temp-wrap')
         document.documentElement.scrollTop = nCurScrollTop
       }
+      cb && cb()
     })
   }
 
