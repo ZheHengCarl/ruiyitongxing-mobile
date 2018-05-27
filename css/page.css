@@ -1896,4 +1896,54 @@ div.bg-blue {
 }
 
 /*********************************/
+.manuals {}
+.manuals .main-top{
+  height: 0.78rem;
+  margin: 0 0.2rem;
+  border-bottom: 2px solid #e0f0ff;
+  align-items: center;
+  font-size: 24px;
+  color: #1277be;
+}
+.banner-manuals {
+  margin: 0 0.2rem;
+}
+.banner-manuals img {
+  display: block;
+  width: 100%;
+}
+.manuals-ul {
+  margin: 0 0.2rem;
+}
+.manuals-li {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.1rem;
+  color: #1277be;
+  border-bottom: 1px solid #e0f0ff;
+}
+.manuals-li:last-child {
+  border-bottom: none;
+}
+.manuals-li a{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 0.24rem;
+}
+.manuals-li i.i-manuals {
+  width: 0.4rem;
+  height: 0.42rem;
+  margin-right: 0.1rem;
+  background: url('../img/icon/icon-pdf.png');
+  background-size: contain;
+}
+.manuals-li .name{
+  flex: 1;
+}
+.manuals-li .date {
+  color: #b8c1ce;
+}
+
+
 

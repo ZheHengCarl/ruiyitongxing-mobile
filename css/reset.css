@@ -4,7 +4,7 @@ ul{ list-style:none; margin:0; padding:0;}
 ol{ list-style:none; margin:0; padding:0;}
 img{ border:none;}
 /*b { font-weight:normal;}*/
-a{ text-decoration:none; -webkit-tap-highlight-color:transparent;}
+a{ color:inherit;text-decoration:none; -webkit-tap-highlight-color:transparent;}
 input,select{margin:0; border:none; outline:medium; -webkit-appearance:none;}
 i,em,s{ font-style:normal; text-decoration:none;}
 li { -webkit-tap-highlight-color:transparent;}

@@ -590,18 +590,20 @@ input:checked + .ipt-checkbox {
   border-bottom: 2px solid #e6f1f6;
 }
 .side-nav .side-nav-head p {
+  display: flex;
+  align-items: center;
   padding-bottom: 0.43rem;
 }
 .side-nav .side-nav-head p i {
-  display: inline-block;
   width: 0.24rem;
   height: 0.24rem;
-  vertical-align: middle;
   margin-right: 0.1rem;
 }
 .side-nav .side-nav-head p span {
-  display: inline-block;
-  vertical-align: middle;
+}
+.side-nav .side-nav-head p a {
+  display: flex;
+  align-items: center;
 }
 .side-nav .side-nav-foot {
   display: block;
