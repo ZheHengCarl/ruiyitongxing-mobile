@@ -591,8 +591,8 @@
   opacity: 0;
 }
 .top-search-bar .fa-search {
-  flex: 1 1 0.2rem;
-  -webkit-flex: 1 1 0.2rem;
+  flex: 0 0 0.2rem;
+  -webkit-flex: 0 0 0.2rem;
   margin: 0 0.2rem;
   font-size: 0.2rem;
   color: #006ab4;
@@ -1948,7 +1948,7 @@ div.bg-blue {
 
 /*********************************/
 
-/*********************************/
+/************** draft ************/
 .draft .main-top{
   height: 0.78rem;
   margin: 0 0.2rem;
@@ -1957,8 +1957,9 @@ div.bg-blue {
   font-size: 24px;
   color: #1277be;
 }
-
 /*********************************/
+
+/************* manuals ***********/
 .manuals {}
 .manuals .main-top{
   height: 0.78rem;
@@ -2007,6 +2008,39 @@ div.bg-blue {
 .manuals-li .date {
   color: #b8c1ce;
 }
+.supervise .body {
+  bottom: 0;
+}
+/*********************************/
 
-
+/************* supervise *************/
+.supervise .conference-pic {
+  width: 100%;
+}
+.supervise .conference-info p label {
+  width: 1.2rem;
+}
+.supervise .top-search-bar {
+  flex: 1;
+  margin: 0 0.2rem;
+}
+.ipt-search {
+  flex: 1;
+}
+.head-search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border-right: 2px solid #e0f0ff;
+  font-size: 0.24rem;
+  color: #1277be;
+}
+.head-search-bar i.i-supervise {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin: 0 0.1rem 0 0.23rem;
+  background: url('../img/icon/icon-monitor.png');
+  background-size: contain;
+}
+/*********************************/
 
