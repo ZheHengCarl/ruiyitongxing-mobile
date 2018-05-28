@@ -2024,6 +2024,9 @@ div.bg-blue {
   flex: 1;
   margin: 0 0.2rem;
 }
+.supervise .main-content {
+  top: 0.2rem;
+}
 .ipt-search {
   flex: 1;
 }
