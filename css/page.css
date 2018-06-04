@@ -1267,7 +1267,7 @@ div.bg-blue {
   position: absolute;
   top: 0.95rem;
   left: 0.2rem;
-  bottom: 1rem;
+  bottom: 0.2rem;
   right: 0.2rem;
 }
 .confer-detail-container {
@@ -1283,7 +1283,7 @@ div.bg-blue {
 }
 .layer-conference-detail .conference-btn-bar {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   height: 0.8rem;
   bottom: 0;
   left: 0.4rem;
