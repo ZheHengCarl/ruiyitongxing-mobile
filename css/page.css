@@ -1271,6 +1271,9 @@ div.bg-blue {
   bottom: 1rem;
   right: 0.2rem;
 }
+.confer-detail-container {
+  overflow: hidden;
+}
 .layer-conference-detail .confer-detail-switch {
   display: flex;
   transition: all .5s ease-out;
@@ -2133,9 +2136,9 @@ div.bg-blue {
   height: 8rem;
   margin: .21rem auto 0;
   padding: 0 .2rem;
-	background-color: #ffffff;
-	box-shadow: 0rem 0rem 0.2rem 0rem
-		rgba(0, 173, 228, 0.15);
+  background-color: #ffffff;
+  box-shadow: 0rem 0rem 0.2rem 0rem
+    rgba(0, 173, 228, 0.15);
   border-radius: 0.2rem;
   overflow: auto;
   -webkit-overflow-scrolling: touch
