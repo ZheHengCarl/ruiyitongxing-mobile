@@ -1385,14 +1385,13 @@ div.bg-blue {
 
 /*********************************/
 .calendar-body-times {
-  width: 11.8rem;
   color: #78859a;
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow: auto;
 }
 .calendar-body-times .weeks {
   display: flex;
-  padding: 0.2rem 0 0.15rem 0.6rem;
+  width: 11.24rem;
+  padding: 0.2rem 0 0.15rem .85rem;
   border-bottom: 2px solid #45cbe4;
   text-align: center;
 }
@@ -1402,9 +1401,11 @@ div.bg-blue {
 }
 .calendar-body-times .times {
   display: flex;
+  width: 12.1rem;
 }
 .calendar-body-times .times .y-axis {
-  flex: .5;
+  width: .8rem;
+  /* flex: .5; */
 }
 .calendar-body-times .times li{
   position: relative;
