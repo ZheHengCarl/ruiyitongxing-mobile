@@ -1151,6 +1151,7 @@ div.bg-blue {
   height: 7.5rem;
 }
 .calendar-body .days li{
+  float: left;
   height: 1.5rem;
   padding: 0.1rem;
   border-left: 2px solid #e0f0ff;
