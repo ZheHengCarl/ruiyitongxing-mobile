@@ -2151,3 +2151,201 @@ div.bg-blue {
   color: #1277be;
   font-size: .24rem;
 }
+.week-content{
+  overflow: auto;
+}
+ .week-content .week-scroll-content {
+  width: 12.1rem;
+  height: 5.5rem;
+  /* overflow: auto; */
+}
+ .week-content .week-scroll-content > div {
+  height: 49px;
+  border-bottom: 1px solid #e0f0ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ .week-content .week-scroll-content > div .time {
+  float: left;
+  width: 40px;
+  height: 100%;
+  color: #78859a;
+  font-size: 12px;
+  border-right: 1px solid #53c6ea;
+  text-align: center;
+}
+ .week-content .week-scroll-content > div > ul {
+  height: 49px;
+}
+ .week-content .week-scroll-content > div > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  position: relative;
+  width: 1.6rem;
+  height: 100%;
+  /* background: url("../img/bg-line.jpg") repeat-x center center; */
+  border-right: 1px solid #e0f0ff;
+}
+ .week-content .week-scroll-content > div > ul > li:nth-child(7n) {
+  border-right: none;
+}
+ .week-content .week-scroll-content > div > ul > li section {
+  position: absolute;
+  top: 0;
+  width: 22%;
+  height: 100%;
+}
+ .week-content .week-scroll-content > div > ul > li section.yqd {
+  left: 0;
+}
+ .week-content .week-scroll-content > div > ul > li section.wqd {
+  left: 33%;
+}
+ .week-content .week-scroll-content > div > ul > li section.ycj {
+  left: 66%;
+}
+ .week-content .week-scroll-content > div > ul > li .detail {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 375px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
+          box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
+  z-index: 999;
+  font-size: 12px;
+}
+ .week-content .week-scroll-content > div > ul > li .detail h3 {
+  border-left: 2px solid #4192cb;
+  height: 22px;
+  background-color: #fff;
+}
+ .week-content .week-scroll-content > div > ul > li .detail h3 img {
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  vertical-align: middle;
+}
+ .week-content .week-scroll-content > div > ul > li .detail h3 span {
+  vertical-align: middle;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol {
+  height: 353px;
+  padding: 0 22px;
+  background-color: #f8f8f8;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li {
+  padding: 15px 0;
+  border-bottom: 1px dashed #b6bfce;
+  color: #78859a;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li > div {
+  margin-bottom: 5px;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li > div span {
+  float: left;
+  width: 60px;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  text-align-last: justify;
+  -moz-text-align-last: justify;
+  -webkit-text-align-last: justify;
+  line-height: inherit;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li > div label {
+  padding-left: 75px;
+  display: block;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li span {
+  color: #1277be;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content div {
+  width: 65px;
+  height: 25px;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  border-radius: 17px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 25px;
+  color: #FFF;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content div i {
+  margin-right: 5px;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content .close-btn {
+  background-color: #b8c1ce;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content .change-btn {
+  background-color: #4596d5;
+}
+ .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content .rob-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #fd7423;
+}
+ .week-content .week-scroll-content > div > ul > li p {
+  float: left;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-size: 10px;
+}
+ .week-content .week-scroll-content > div > ul > li p .num {
+  display: block;
+  text-align: center;
+}
+ .week-content .week-scroll-content > div > ul > li p span {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+ .week-content .week-scroll-content > div > ul > li .ycj-top {
+  background: #4192cb url("../img/icon/icon-week-ycj.jpg") no-repeat top left;
+  background-size: 100% 20px;
+}
+ .week-content .week-scroll-content > div > ul > li .ycj-title {
+  color: #4192cb;
+}
+ .week-content .week-scroll-content > div > ul > li .wqd-top {
+  background: #fd904f url("../img/icon/icon-week-wqd.jpg") no-repeat top left;
+  background-size: 100% 20px;
+}
+ .week-content .week-scroll-content > div > ul > li .wqd-title {
+  color: #fd904f;
+}
+ .week-content .week-scroll-content > div > ul > li .yqd-top {
+  background: #6ed2e5 url("../img/icon/icon-week-yqd.jpg") no-repeat top left;
+  background-size: 100% 20px;
+}
+ .week-content .week-scroll-content > div > ul > li .yqd-title {
+  color: #6ed2e5;
+}
+ .week-content .week-scroll-content > div > ul > li .ycj-cont {
+  background-color: #4192cb;
+}
+ .week-content .week-scroll-content > div > ul > li .wqd-cont {
+  background-color: #fd904f;
+}
+ .week-content .week-scroll-content > div > ul > li .yqd-cont {
+  background-color: #6ed2e5;
+}
