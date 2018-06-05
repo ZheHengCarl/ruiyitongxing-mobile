@@ -133,24 +133,24 @@ var Chart = function (config) {
   }
 }
 
-var startY = 0,
-scrollView = $('.scroll-view'),
-clientHeight = scrollView.height(),
-scrollHeight = scrollView.prop('scrollHeight');
+// var startY = 0,
+// scrollView = $('.scroll-view'),
+// clientHeight = scrollView.height(),
+// scrollHeight = scrollView.prop('scrollHeight');
 
-scrollView.bind('touchstart', function (e) {
-  var ev = e.originalEvent.changedTouches[0]
-  startY = ev.clientY
-})
+// scrollView.bind('touchstart', function (e) {
+//   var ev = e.originalEvent.changedTouches[0]
+//   startY = ev.clientY
+// })
 
-scrollView.bind('touchmove', function (e) {
-  var ev = e.originalEvent.changedTouches[0], $this = $(this)
-  if ($this.scrollTop() <= 0 && ev.clientY - startY > 0) {
-    e.preventDefault()
-  } else if ($this.scrollTop() + clientHeight >= scrollHeight && ev.clientY - startY < 0) {
-    e.preventDefault()
-  }
-})
+// scrollView.bind('touchmove', function (e) {
+//   var ev = e.originalEvent.changedTouches[0], $this = $(this)
+//   if ($this.scrollTop() <= 0 && ev.clientY - startY > 0) {
+//     e.preventDefault()
+//   } else if ($this.scrollTop() + clientHeight >= scrollHeight && ev.clientY - startY < 0) {
+//     e.preventDefault()
+//   }
+// })
 
 // 多选下拉 全选
 $('.all-option input').bind('change', function () {
