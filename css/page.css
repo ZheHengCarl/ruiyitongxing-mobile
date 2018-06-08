@@ -2058,12 +2058,12 @@ div.bg-blue {
   background-size: contain;
 }
 /*********************************/
-.new-conference .submit-btn{
+.new-conference .submit-btn, .conference-report .submit-btn{
   display: block;
   padding: 0.2rem 0;
   text-align: center;
 }
-.new-conference .submit-btn button {
+.new-conference .submit-btn button, .conference-report .submit-btn button{
   width: 1rem;
   height: 0.4rem;
   margin: 0 .1rem;
