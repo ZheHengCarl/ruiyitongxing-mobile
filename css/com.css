@@ -142,10 +142,11 @@ body {
 .ipt-text-with-name .field-value {
   position: relative;
   width: 100%;
-  margin: 0.24rem 0 0.25rem 0.2rem;
-  height: 0.3rem;
+  margin: 0 0 0 0.2rem;
+  height:100%;
   vertical-align: top;
   font-size: 0.3rem;
+  line-height: .8rem;
 }
 .ipt-text-with-name .ipt-area {
   position: relative;
@@ -224,6 +225,14 @@ body {
 }
 body .btn-gray {
   background-color: #b8c1ce;
+}
+.btn-confirm-layer{
+  width: 1.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.24rem;
 }
 .btn-close-layer {
   width: 1rem;
