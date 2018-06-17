@@ -1290,14 +1290,14 @@ div.bg-blue {
   bottom: 0;
   left: 0.4rem;
   right: 0.4rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .layer-conference-detail .conference-btn-bar {
   text-align: center;
 }
 .layer-conference-detail .conference-btn-bar .btn-bar {
-  flex: 1;
+
 }
 .layer-conference-detail .conference-btn-bar .btn-bar button{
   width: 1.4rem;
